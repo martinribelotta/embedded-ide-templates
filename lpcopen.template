@@ -36366,7 +36366,7 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +		-c "halt 0" \
 +		-c "flash write_image erase unlock $< 0x1A000000 bin" \
 +		-c "reset run" \
-+		-c "shutdown"
++		-c "shutdown" 2>&1
 +
 +clean:
 +	@echo CLEAN

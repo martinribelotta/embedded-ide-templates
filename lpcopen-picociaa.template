@@ -26492,11 +26492,11 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +		-c "reset halt" \
 +		-c "flash write_image erase unlock $< 0x00000000 bin" \
 +		-c "reset run" \
-+		-c "shutdown"
++		-c "shutdown" 2>&1
 +
 +erase:
 +	$(Q)openocd -f $(OOCD_SCRIPT) \
-+		-c "init" -c "reset halt" -c "flash erase_sector 0 0 last" -c "shutdown"
++		-c "init" -c "reset halt" -c "flash erase_sector 0 0 last" -c "shutdown" 2>&1
 +
 +clean:
 +	@echo CLEAN
@@ -26506,7 +26506,7 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/oocd.cfg ./oocd.cfg
 --- a_hU9URB/oocd.cfg	1969-12-31 21:00:00.000000000 -0300
 +++ ./oocd.cfg	2016-10-14 22:19:41.000000000 -0300
-@@ -0,0 +1,89 @@
+@@ -0,0 +1,90 @@
 +###############################################################################
 +#
 +# Copyright 2014, Juan Cecconi (UTN-FRBA, Numetron)
@@ -26544,6 +26544,7 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#OpenOCD configuration (target and interface) for LPC54102 using CMSIS-DAP
 +
 +interface cmsis-dap
++cmsis_dap_vid_pid 0x1FC9 0x0081
 +
 +adapter_khz 1000
 +
