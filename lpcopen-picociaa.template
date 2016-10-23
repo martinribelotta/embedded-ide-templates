@@ -1,6 +1,6 @@
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/app/src/blinky.c ./app/src/blinky.c
---- a_hU9URB/app/src/blinky.c	1969-12-31 21:00:00.000000000 -0300
-+++ ./app/src/blinky.c	2016-10-15 19:15:06.404835638 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/app/src/blinky.c ./app/src/blinky.c
+--- a_tnusFF/app/src/blinky.c	1969-12-31 21:00:00.000000000 -0300
++++ ./app/src/blinky.c	2016-10-22 23:17:43.468840275 -0300
 @@ -0,0 +1,75 @@
 +/*
 + * @brief Blinky example using SysTick and interrupt
@@ -77,9 +77,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +
 +	return 0;
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/base/inc/crp.h ./base/inc/crp.h
---- a_hU9URB/base/inc/crp.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./base/inc/crp.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/base/inc/crp.h ./base/inc/crp.h
+--- a_tnusFF/base/inc/crp.h	1969-12-31 21:00:00.000000000 -0300
++++ ./base/inc/crp.h	2016-10-22 23:17:43.472840275 -0300
 @@ -0,0 +1,85 @@
 +/****************************************************************************
 + *   Description:
@@ -166,9 +166,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +
 +
 +#endif /* _CRP_H_INCLUDED_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/base/Makefile ./base/Makefile
---- a_hU9URB/base/Makefile	1969-12-31 21:00:00.000000000 -0300
-+++ ./base/Makefile	2016-10-15 02:59:46.692797853 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/base/Makefile ./base/Makefile
+--- a_tnusFF/base/Makefile	1969-12-31 21:00:00.000000000 -0300
++++ ./base/Makefile	2016-10-22 23:17:43.472840275 -0300
 @@ -0,0 +1,39 @@
 +# Copyright 2016, Pablo Ridolfi
 +# All rights reserved.
@@ -209,9 +209,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +base_INC_FOLDERS := $(base_PATH)/inc
 +
 +base_SRC_FOLDERS := $(base_PATH)/src
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/base/src/cr_startup_lpc5410x.c ./base/src/cr_startup_lpc5410x.c
---- a_hU9URB/base/src/cr_startup_lpc5410x.c	1969-12-31 21:00:00.000000000 -0300
-+++ ./base/src/cr_startup_lpc5410x.c	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/base/src/cr_startup_lpc5410x.c ./base/src/cr_startup_lpc5410x.c
+--- a_tnusFF/base/src/cr_startup_lpc5410x.c	1969-12-31 21:00:00.000000000 -0300
++++ ./base/src/cr_startup_lpc5410x.c	2016-10-22 23:17:43.472840275 -0300
 @@ -0,0 +1,532 @@
 +//*****************************************************************************
 +// LPC5410x Microcontroller Startup code for use with LPCXpresso IDE
@@ -745,9 +745,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +    while (1) {}
 +}
 +
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/base/src/sysinit.c ./base/src/sysinit.c
---- a_hU9URB/base/src/sysinit.c	1969-12-31 21:00:00.000000000 -0300
-+++ ./base/src/sysinit.c	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/base/src/sysinit.c ./base/src/sysinit.c
+--- a_tnusFF/base/src/sysinit.c	1969-12-31 21:00:00.000000000 -0300
++++ ./base/src/sysinit.c	2016-10-22 23:17:43.472840275 -0300
 @@ -0,0 +1,84 @@
 +/*
 + * @brief Common SystemInit function for LPC54xxx chips
@@ -833,9 +833,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +#endif
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/board/inc/board_api.h ./board/inc/board_api.h
---- a_hU9URB/board/inc/board_api.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./board/inc/board_api.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/board/inc/board_api.h ./board/inc/board_api.h
+--- a_tnusFF/board/inc/board_api.h	1969-12-31 21:00:00.000000000 -0300
++++ ./board/inc/board_api.h	2016-10-22 23:17:43.472840275 -0300
 @@ -0,0 +1,187 @@
 +/*
 + * @brief Common board API functions
@@ -1024,9 +1024,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __BOARD_API_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/board/inc/board.h ./board/inc/board.h
---- a_hU9URB/board/inc/board.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./board/inc/board.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/board/inc/board.h ./board/inc/board.h
+--- a_tnusFF/board/inc/board.h	1969-12-31 21:00:00.000000000 -0300
++++ ./board/inc/board.h	2016-10-22 23:17:43.472840275 -0300
 @@ -0,0 +1,113 @@
 +/*
 + * @brief NXP LPCXpresso LPC54102 board file
@@ -1141,9 +1141,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __BOARD_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/board/inc/retarget.h ./board/inc/retarget.h
---- a_hU9URB/board/inc/retarget.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./board/inc/retarget.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/board/inc/retarget.h ./board/inc/retarget.h
+--- a_tnusFF/board/inc/retarget.h	1969-12-31 21:00:00.000000000 -0300
++++ ./board/inc/retarget.h	2016-10-22 23:17:43.472840275 -0300
 @@ -0,0 +1,251 @@
 +/*
 + * @brief	IO redirection support
@@ -1396,9 +1396,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +
 +#endif /* !defined(DEBUG_SEMIHOSTING) */
 +#endif /* defined ( __GNUC__ ) */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/board/Makefile ./board/Makefile
---- a_hU9URB/board/Makefile	1969-12-31 21:00:00.000000000 -0300
-+++ ./board/Makefile	2016-10-15 02:59:46.692797853 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/board/Makefile ./board/Makefile
+--- a_tnusFF/board/Makefile	1969-12-31 21:00:00.000000000 -0300
++++ ./board/Makefile	2016-10-22 23:17:43.536840277 -0300
 @@ -0,0 +1,39 @@
 +# Copyright 2016, Pablo Ridolfi
 +# All rights reserved.
@@ -1439,9 +1439,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +board_INC_FOLDERS := $(board_PATH)/inc
 +
 +board_SRC_FOLDERS := $(board_PATH)/src
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/board/src/board.c ./board/src/board.c
---- a_hU9URB/board/src/board.c	1969-12-31 21:00:00.000000000 -0300
-+++ ./board/src/board.c	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/board/src/board.c ./board/src/board.c
+--- a_tnusFF/board/src/board.c	1969-12-31 21:00:00.000000000 -0300
++++ ./board/src/board.c	2016-10-22 23:17:43.536840277 -0300
 @@ -0,0 +1,163 @@
 +/*
 + * @brief LPCXpresso LPC54102 board file
@@ -1606,9 +1606,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +	/* Initialize the LEDs. Be careful with below routine, once it's called some of the I/O will be set to output. */
 +	Board_LED_Init();
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/board/src/board_sysinit.c ./board/src/board_sysinit.c
---- a_hU9URB/board/src/board_sysinit.c	1969-12-31 21:00:00.000000000 -0300
-+++ ./board/src/board_sysinit.c	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/board/src/board_sysinit.c ./board/src/board_sysinit.c
+--- a_tnusFF/board/src/board_sysinit.c	1969-12-31 21:00:00.000000000 -0300
++++ ./board/src/board_sysinit.c	2016-10-22 23:17:43.536840277 -0300
 @@ -0,0 +1,216 @@
 +/*
 + * @brief NXP LPCXpresso 54102 Sysinit file
@@ -1826,9 +1826,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +	Board_SetupMuxing();
 +	Board_SetupClocking();
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/adc_5410x.h ./chip/inc/adc_5410x.h
---- a_hU9URB/chip/inc/adc_5410x.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/adc_5410x.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/adc_5410x.h ./chip/inc/adc_5410x.h
+--- a_tnusFF/chip/inc/adc_5410x.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/adc_5410x.h	2016-10-22 23:17:43.536840277 -0300
 @@ -0,0 +1,637 @@
 +/*
 + * @brief LPC5410X ADC driver
@@ -2467,9 +2467,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __ADC_5410X_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/chip.h ./chip/inc/chip.h
---- a_hU9URB/chip/inc/chip.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/chip.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/chip.h ./chip/inc/chip.h
+--- a_tnusFF/chip/inc/chip.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/chip.h	2016-10-22 23:17:43.536840277 -0300
 @@ -0,0 +1,251 @@
 +/*
 + * @brief LPC5410x basic chip inclusion file
@@ -2722,9 +2722,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __CHIP_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/clock_5410x.h ./chip/inc/clock_5410x.h
---- a_hU9URB/chip/inc/clock_5410x.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/clock_5410x.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/clock_5410x.h ./chip/inc/clock_5410x.h
+--- a_tnusFF/chip/inc/clock_5410x.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/clock_5410x.h	2016-10-22 23:17:43.536840277 -0300
 @@ -0,0 +1,473 @@
 +/*
 + * @brief LPC5410X clock driver
@@ -3199,9 +3199,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __CLOCK_5410X_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/cmsis_5410x.h ./chip/inc/cmsis_5410x.h
---- a_hU9URB/chip/inc/cmsis_5410x.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/cmsis_5410x.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/cmsis_5410x.h ./chip/inc/cmsis_5410x.h
+--- a_tnusFF/chip/inc/cmsis_5410x.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/cmsis_5410x.h	2016-10-22 23:17:43.536840277 -0300
 @@ -0,0 +1,171 @@
 +/*
 + * @brief Basic CMSIS include file for LPC5410x M4 core
@@ -3374,9 +3374,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __CMSIS_5410X_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/cmsis_5410x_m0.h ./chip/inc/cmsis_5410x_m0.h
---- a_hU9URB/chip/inc/cmsis_5410x_m0.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/cmsis_5410x_m0.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/cmsis_5410x_m0.h ./chip/inc/cmsis_5410x_m0.h
+--- a_tnusFF/chip/inc/cmsis_5410x_m0.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/cmsis_5410x_m0.h	2016-10-22 23:17:43.536840277 -0300
 @@ -0,0 +1,154 @@
 +/*
 + * @brief Basic CMSIS include file for LPC5410x M0+ core
@@ -3532,9 +3532,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __CMSIS_5410X_M0_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/cmsis.h ./chip/inc/cmsis.h
---- a_hU9URB/chip/inc/cmsis.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/cmsis.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/cmsis.h ./chip/inc/cmsis.h
+--- a_tnusFF/chip/inc/cmsis.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/cmsis.h	2016-10-22 23:17:43.536840277 -0300
 @@ -0,0 +1,55 @@
 +/*
 + * @brief LPC5410x selective CMSIS inclusion file
@@ -3591,9 +3591,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __CMSIS_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/core_cm0plus.h ./chip/inc/core_cm0plus.h
---- a_hU9URB/chip/inc/core_cm0plus.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/core_cm0plus.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/core_cm0plus.h ./chip/inc/core_cm0plus.h
+--- a_tnusFF/chip/inc/core_cm0plus.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/core_cm0plus.h	2016-10-22 23:17:43.540840277 -0300
 @@ -0,0 +1,793 @@
 +/**************************************************************************//**
 + * @file     core_cm0plus.h
@@ -4388,9 +4388,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#ifdef __cplusplus
 +}
 +#endif
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/core_cm4.h ./chip/inc/core_cm4.h
---- a_hU9URB/chip/inc/core_cm4.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/core_cm4.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/core_cm4.h ./chip/inc/core_cm4.h
+--- a_tnusFF/chip/inc/core_cm4.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/core_cm4.h	2016-10-22 23:17:43.544840277 -0300
 @@ -0,0 +1,1772 @@
 +/**************************************************************************//**
 + * @file     core_cm4.h
@@ -6164,9 +6164,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#ifdef __cplusplus
 +}
 +#endif
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/core_cm4_simd.h ./chip/inc/core_cm4_simd.h
---- a_hU9URB/chip/inc/core_cm4_simd.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/core_cm4_simd.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/core_cm4_simd.h ./chip/inc/core_cm4_simd.h
+--- a_tnusFF/chip/inc/core_cm4_simd.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/core_cm4_simd.h	2016-10-22 23:17:43.548840278 -0300
 @@ -0,0 +1,673 @@
 +/**************************************************************************//**
 + * @file     core_cm4_simd.h
@@ -6841,9 +6841,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#ifdef __cplusplus
 +}
 +#endif
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/core_cmFunc.h ./chip/inc/core_cmFunc.h
---- a_hU9URB/chip/inc/core_cmFunc.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/core_cmFunc.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/core_cmFunc.h ./chip/inc/core_cmFunc.h
+--- a_tnusFF/chip/inc/core_cmFunc.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/core_cmFunc.h	2016-10-22 23:17:43.548840278 -0300
 @@ -0,0 +1,636 @@
 +/**************************************************************************//**
 + * @file     core_cmFunc.h
@@ -7481,9 +7481,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +
 +
 +#endif /* __CORE_CMFUNC_H */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/core_cmInstr.h ./chip/inc/core_cmInstr.h
---- a_hU9URB/chip/inc/core_cmInstr.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/core_cmInstr.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/core_cmInstr.h ./chip/inc/core_cmInstr.h
+--- a_tnusFF/chip/inc/core_cmInstr.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/core_cmInstr.h	2016-10-22 23:17:43.548840278 -0300
 @@ -0,0 +1,688 @@
 +/**************************************************************************//**
 + * @file     core_cmInstr.h
@@ -8173,9 +8173,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +/*@}*/ /* end of group CMSIS_Core_InstructionInterface */
 +
 +#endif /* __CORE_CMINSTR_H */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/cpuctrl_5410x.h ./chip/inc/cpuctrl_5410x.h
---- a_hU9URB/chip/inc/cpuctrl_5410x.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/cpuctrl_5410x.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/cpuctrl_5410x.h ./chip/inc/cpuctrl_5410x.h
+--- a_tnusFF/chip/inc/cpuctrl_5410x.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/cpuctrl_5410x.h	2016-10-22 23:17:43.548840278 -0300
 @@ -0,0 +1,117 @@
 +/*
 + * @brief LPC5410X CPU multi-core support driver
@@ -8294,9 +8294,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __CPUCTRL_5410X_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/crc_5410x.h ./chip/inc/crc_5410x.h
---- a_hU9URB/chip/inc/crc_5410x.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/crc_5410x.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/crc_5410x.h ./chip/inc/crc_5410x.h
+--- a_tnusFF/chip/inc/crc_5410x.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/crc_5410x.h	2016-10-22 23:17:43.552840278 -0300
 @@ -0,0 +1,262 @@
 +/*
 + * @brief LPC5410X Cyclic Redundancy Check (CRC) Engine driver
@@ -8560,9 +8560,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __CRC_5410X_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/dma_5410x.h ./chip/inc/dma_5410x.h
---- a_hU9URB/chip/inc/dma_5410x.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/dma_5410x.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/dma_5410x.h ./chip/inc/dma_5410x.h
+--- a_tnusFF/chip/inc/dma_5410x.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/dma_5410x.h	2016-10-22 23:17:43.552840278 -0300
 @@ -0,0 +1,714 @@
 +/*
 + * @brief LPC5410X DMA driver declarations and functions
@@ -9278,9 +9278,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __DMA_5410X_H */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/error.h ./chip/inc/error.h
---- a_hU9URB/chip/inc/error.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/error.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/error.h ./chip/inc/error.h
+--- a_tnusFF/chip/inc/error.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/error.h	2016-10-22 23:17:43.552840278 -0300
 @@ -0,0 +1,272 @@
 +/*
 + * @brief Error code returned by Boot ROM drivers/library functions
@@ -9554,9 +9554,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +	case pred:; }
 +
 +#endif /* __LPC_ERROR_H__ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/fifo_5410x.h ./chip/inc/fifo_5410x.h
---- a_hU9URB/chip/inc/fifo_5410x.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/fifo_5410x.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/fifo_5410x.h ./chip/inc/fifo_5410x.h
+--- a_tnusFF/chip/inc/fifo_5410x.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/fifo_5410x.h	2016-10-22 23:17:43.552840278 -0300
 @@ -0,0 +1,559 @@
 +/*
 + * @brief LPC5410X System FIFO chip driver
@@ -10117,9 +10117,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __FIFO_5410X_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/fpu_init.h ./chip/inc/fpu_init.h
---- a_hU9URB/chip/inc/fpu_init.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/fpu_init.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/fpu_init.h ./chip/inc/fpu_init.h
+--- a_tnusFF/chip/inc/fpu_init.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/fpu_init.h	2016-10-22 23:17:43.552840278 -0300
 @@ -0,0 +1,52 @@
 +/*
 + * @brief FPU init code
@@ -10173,9 +10173,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 + */
 +
 +#endif /* __FPU_INIT_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/gpio_5410x.h ./chip/inc/gpio_5410x.h
---- a_hU9URB/chip/inc/gpio_5410x.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/gpio_5410x.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/gpio_5410x.h ./chip/inc/gpio_5410x.h
+--- a_tnusFF/chip/inc/gpio_5410x.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/gpio_5410x.h	2016-10-22 23:17:43.552840278 -0300
 @@ -0,0 +1,471 @@
 +/*
 + * @brief LPC5410X GPIO driver
@@ -10648,9 +10648,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __GPIO_5410X_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/gpiogroup_5410x.h ./chip/inc/gpiogroup_5410x.h
---- a_hU9URB/chip/inc/gpiogroup_5410x.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/gpiogroup_5410x.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/gpiogroup_5410x.h ./chip/inc/gpiogroup_5410x.h
+--- a_tnusFF/chip/inc/gpiogroup_5410x.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/gpiogroup_5410x.h	2016-10-22 23:17:43.556840278 -0300
 @@ -0,0 +1,223 @@
 +/*
 + * @brief LPC5410x GPIO group driver
@@ -10875,9 +10875,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __GPIOGROUP_5410X_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/i2c_common_5410x.h ./chip/inc/i2c_common_5410x.h
---- a_hU9URB/chip/inc/i2c_common_5410x.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/i2c_common_5410x.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/i2c_common_5410x.h ./chip/inc/i2c_common_5410x.h
+--- a_tnusFF/chip/inc/i2c_common_5410x.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/i2c_common_5410x.h	2016-10-22 23:17:43.556840278 -0300
 @@ -0,0 +1,526 @@
 +/*
 + * @brief LPC5410x I2C driver
@@ -11405,9 +11405,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __I2C_COMMON_5410X_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/i2cm_5410x.h ./chip/inc/i2cm_5410x.h
---- a_hU9URB/chip/inc/i2cm_5410x.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/i2cm_5410x.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/i2cm_5410x.h ./chip/inc/i2cm_5410x.h
+--- a_tnusFF/chip/inc/i2cm_5410x.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/i2cm_5410x.h	2016-10-22 23:17:43.556840278 -0300
 @@ -0,0 +1,318 @@
 +/*
 + * @brief LPC5410x I2C driver
@@ -11727,9 +11727,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __I2CM_5410X_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/i2cs_5410x.h ./chip/inc/i2cs_5410x.h
---- a_hU9URB/chip/inc/i2cs_5410x.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/i2cs_5410x.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/i2cs_5410x.h ./chip/inc/i2cs_5410x.h
+--- a_tnusFF/chip/inc/i2cs_5410x.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/i2cs_5410x.h	2016-10-22 23:17:43.556840278 -0300
 @@ -0,0 +1,369 @@
 +/*
 + * @brief LPC5410X I2C slave driver
@@ -12100,9 +12100,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __I2CS_5410X_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/iap.h ./chip/inc/iap.h
---- a_hU9URB/chip/inc/iap.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/iap.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/iap.h ./chip/inc/iap.h
+--- a_tnusFF/chip/inc/iap.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/iap.h	2016-10-22 23:17:43.556840278 -0300
 @@ -0,0 +1,184 @@
 +/*
 + * @brief Common IAP support functions
@@ -12288,9 +12288,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __IAP_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/inmux_5410x.h ./chip/inc/inmux_5410x.h
---- a_hU9URB/chip/inc/inmux_5410x.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/inmux_5410x.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/inmux_5410x.h ./chip/inc/inmux_5410x.h
+--- a_tnusFF/chip/inc/inmux_5410x.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/inmux_5410x.h	2016-10-22 23:17:43.556840278 -0300
 @@ -0,0 +1,162 @@
 +/*
 + * @brief LPC5410X Input Mux Registers and Driver
@@ -12454,9 +12454,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __INMUX_5410X_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/iocon_5410x.h ./chip/inc/iocon_5410x.h
---- a_hU9URB/chip/inc/iocon_5410x.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/iocon_5410x.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/iocon_5410x.h ./chip/inc/iocon_5410x.h
+--- a_tnusFF/chip/inc/iocon_5410x.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/iocon_5410x.h	2016-10-22 23:17:43.556840278 -0300
 @@ -0,0 +1,139 @@
 +/*
 + * @brief LPC5410X IOCON register block and driver
@@ -12597,9 +12597,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __IOCON_5410X_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/lpc_types.h ./chip/inc/lpc_types.h
---- a_hU9URB/chip/inc/lpc_types.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/lpc_types.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/lpc_types.h ./chip/inc/lpc_types.h
+--- a_tnusFF/chip/inc/lpc_types.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/lpc_types.h	2016-10-22 23:17:43.560840278 -0300
 @@ -0,0 +1,223 @@
 +/*
 + * @brief Common types used in LPC functions
@@ -12824,9 +12824,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 + */
 +
 +#endif /* __LPC_TYPES_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/mailbox_5410x.h ./chip/inc/mailbox_5410x.h
---- a_hU9URB/chip/inc/mailbox_5410x.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/mailbox_5410x.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/mailbox_5410x.h ./chip/inc/mailbox_5410x.h
+--- a_tnusFF/chip/inc/mailbox_5410x.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/mailbox_5410x.h	2016-10-22 23:17:43.560840278 -0300
 @@ -0,0 +1,173 @@
 +/*
 + * @brief LPC5410X Mailbox M4/M0+ driver
@@ -13001,9 +13001,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __MAILBOX_5410X_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/mrt_5410x.h ./chip/inc/mrt_5410x.h
---- a_hU9URB/chip/inc/mrt_5410x.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/mrt_5410x.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/mrt_5410x.h ./chip/inc/mrt_5410x.h
+--- a_tnusFF/chip/inc/mrt_5410x.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/mrt_5410x.h	2016-10-22 23:17:43.560840278 -0300
 @@ -0,0 +1,340 @@
 +/*
 + * @brief LPC5410X Multi-Rate Timer (MRT) registers and driver functions
@@ -13345,9 +13345,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __MRT_5410X_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/pdm_api.h ./chip/inc/pdm_api.h
---- a_hU9URB/chip/inc/pdm_api.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/pdm_api.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/pdm_api.h ./chip/inc/pdm_api.h
+--- a_tnusFF/chip/inc/pdm_api.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/pdm_api.h	2016-10-22 23:17:43.560840278 -0300
 @@ -0,0 +1,119 @@
 +/*
 + * @brief PDM mic interface module
@@ -13468,9 +13468,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __PDM_API_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/pinint_5410x.h ./chip/inc/pinint_5410x.h
---- a_hU9URB/chip/inc/pinint_5410x.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/pinint_5410x.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/pinint_5410x.h ./chip/inc/pinint_5410x.h
+--- a_tnusFF/chip/inc/pinint_5410x.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/pinint_5410x.h	2016-10-22 23:17:43.560840278 -0300
 @@ -0,0 +1,413 @@
 +/*
 + * @brief LPC5410X Pin Interrupt and Pattern Match Registers and driver
@@ -13885,9 +13885,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __PININT_5410X_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/pintable_5410x.h ./chip/inc/pintable_5410x.h
---- a_hU9URB/chip/inc/pintable_5410x.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/pintable_5410x.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/pintable_5410x.h ./chip/inc/pintable_5410x.h
+--- a_tnusFF/chip/inc/pintable_5410x.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/pintable_5410x.h	2016-10-22 23:17:43.560840278 -0300
 @@ -0,0 +1,124 @@
 +/*
 + * @brief LPC5410x enhanced boot block
@@ -14013,9 +14013,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __PINTAB_5410X_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/pll_5410x.h ./chip/inc/pll_5410x.h
---- a_hU9URB/chip/inc/pll_5410x.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/pll_5410x.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/pll_5410x.h ./chip/inc/pll_5410x.h
+--- a_tnusFF/chip/inc/pll_5410x.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/pll_5410x.h	2016-10-22 23:17:43.560840278 -0300
 @@ -0,0 +1,305 @@
 +/*
 + * @brief LPC5410X PLL driver
@@ -14322,9 +14322,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __PLL_5410X_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/pmu_5410x.h ./chip/inc/pmu_5410x.h
---- a_hU9URB/chip/inc/pmu_5410x.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/pmu_5410x.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/pmu_5410x.h ./chip/inc/pmu_5410x.h
+--- a_tnusFF/chip/inc/pmu_5410x.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/pmu_5410x.h	2016-10-22 23:17:43.560840278 -0300
 @@ -0,0 +1,184 @@
 +/*
 + * @brief LPC5410X Power Management declarations and functions
@@ -14510,9 +14510,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __PMU_5410X_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/power_lib_5410x.h ./chip/inc/power_lib_5410x.h
---- a_hU9URB/chip/inc/power_lib_5410x.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/power_lib_5410x.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/power_lib_5410x.h ./chip/inc/power_lib_5410x.h
+--- a_tnusFF/chip/inc/power_lib_5410x.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/power_lib_5410x.h	2016-10-22 23:17:43.564840278 -0300
 @@ -0,0 +1,281 @@
 +/*
 + * @brief LPC5410x Power library functions
@@ -14795,9 +14795,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __POWER_LIB_5410X_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/ring_buffer.h ./chip/inc/ring_buffer.h
---- a_hU9URB/chip/inc/ring_buffer.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/ring_buffer.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/ring_buffer.h ./chip/inc/ring_buffer.h
+--- a_tnusFF/chip/inc/ring_buffer.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/ring_buffer.h	2016-10-22 23:17:43.564840278 -0300
 @@ -0,0 +1,194 @@
 +/*
 + * @brief Common ring buffer support functions
@@ -14993,9 +14993,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 + */
 +
 +#endif /* __RING_BUFFER_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/ritimer_5410x.h ./chip/inc/ritimer_5410x.h
---- a_hU9URB/chip/inc/ritimer_5410x.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/ritimer_5410x.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/ritimer_5410x.h ./chip/inc/ritimer_5410x.h
+--- a_tnusFF/chip/inc/ritimer_5410x.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/ritimer_5410x.h	2016-10-22 23:17:43.564840278 -0300
 @@ -0,0 +1,249 @@
 +/*
 + * @brief LPC5410x RITimer driver
@@ -15246,9 +15246,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __RITIMER_5410X_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/romapi_5410x.h ./chip/inc/romapi_5410x.h
---- a_hU9URB/chip/inc/romapi_5410x.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/romapi_5410x.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/romapi_5410x.h ./chip/inc/romapi_5410x.h
+--- a_tnusFF/chip/inc/romapi_5410x.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/romapi_5410x.h	2016-10-22 23:23:38.052849771 -0300
 @@ -0,0 +1,90 @@
 +/*
 + * @brief LPC5410X ROM API declarations and functions
@@ -15340,9 +15340,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __ROMAPI_5410X_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/rtc_5410x.h ./chip/inc/rtc_5410x.h
---- a_hU9URB/chip/inc/rtc_5410x.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/rtc_5410x.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/rtc_5410x.h ./chip/inc/rtc_5410x.h
+--- a_tnusFF/chip/inc/rtc_5410x.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/rtc_5410x.h	2016-10-22 23:17:43.568840278 -0300
 @@ -0,0 +1,310 @@
 +/*
 + * @brief LPC5410X RTC chip driver
@@ -15654,9 +15654,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __RTC_5410X_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/rtc_ut.h ./chip/inc/rtc_ut.h
---- a_hU9URB/chip/inc/rtc_ut.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/rtc_ut.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/rtc_ut.h ./chip/inc/rtc_ut.h
+--- a_tnusFF/chip/inc/rtc_ut.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/rtc_ut.h	2016-10-22 23:17:43.568840278 -0300
 @@ -0,0 +1,84 @@
 +/*
 + * @brief RTC tick to (a more) Universal Time
@@ -15742,9 +15742,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __RTC_UT_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/sct_5410x.h ./chip/inc/sct_5410x.h
---- a_hU9URB/chip/inc/sct_5410x.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/sct_5410x.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/sct_5410x.h ./chip/inc/sct_5410x.h
+--- a_tnusFF/chip/inc/sct_5410x.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/sct_5410x.h	2016-10-22 23:17:43.572840278 -0300
 @@ -0,0 +1,543 @@
 +/*
 + * @brief LPC5410X State Configurable Timer (SCT) Chip driver
@@ -16289,9 +16289,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __SCT_5410X_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/sct_pwm_5410x.h ./chip/inc/sct_pwm_5410x.h
---- a_hU9URB/chip/inc/sct_pwm_5410x.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/sct_pwm_5410x.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/sct_pwm_5410x.h ./chip/inc/sct_pwm_5410x.h
+--- a_tnusFF/chip/inc/sct_pwm_5410x.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/sct_pwm_5410x.h	2016-10-22 23:17:43.572840278 -0300
 @@ -0,0 +1,178 @@
 +/*
 + * @brief LPC5410x State Configurable Timer (SCT/PWM) Chip driver
@@ -16471,9 +16471,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __SCT_PWM_5410X_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/spi_common_5410x.h ./chip/inc/spi_common_5410x.h
---- a_hU9URB/chip/inc/spi_common_5410x.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/spi_common_5410x.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/spi_common_5410x.h ./chip/inc/spi_common_5410x.h
+--- a_tnusFF/chip/inc/spi_common_5410x.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/spi_common_5410x.h	2016-10-22 23:17:43.572840278 -0300
 @@ -0,0 +1,701 @@
 +/*
 + * @brief LPC5410X SPI common functions and definitions
@@ -17176,9 +17176,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __SPI_COMMON_5410X_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/spim_5410x.h ./chip/inc/spim_5410x.h
---- a_hU9URB/chip/inc/spim_5410x.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/spim_5410x.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/spim_5410x.h ./chip/inc/spim_5410x.h
+--- a_tnusFF/chip/inc/spim_5410x.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/spim_5410x.h	2016-10-22 23:17:43.572840278 -0300
 @@ -0,0 +1,250 @@
 +/*
 + * @brief LPC5410X SPI master driver
@@ -17430,9 +17430,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __SPIM_5410X_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/spis_5410x.h ./chip/inc/spis_5410x.h
---- a_hU9URB/chip/inc/spis_5410x.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/spis_5410x.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/spis_5410x.h ./chip/inc/spis_5410x.h
+--- a_tnusFF/chip/inc/spis_5410x.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/spis_5410x.h	2016-10-22 23:17:43.572840278 -0300
 @@ -0,0 +1,133 @@
 +/*
 + * @brief LPC5410X SPI slave driver
@@ -17567,9 +17567,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __SPIS_5410X_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/stopwatch.h ./chip/inc/stopwatch.h
---- a_hU9URB/chip/inc/stopwatch.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/stopwatch.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/stopwatch.h ./chip/inc/stopwatch.h
+--- a_tnusFF/chip/inc/stopwatch.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/stopwatch.h	2016-10-22 23:17:43.572840278 -0300
 @@ -0,0 +1,137 @@
 +/*
 + * @brief Common stopwatch support
@@ -17708,9 +17708,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 + */
 +
 +#endif /* __STOPWATCH_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/syscon_5410x.h ./chip/inc/syscon_5410x.h
---- a_hU9URB/chip/inc/syscon_5410x.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/syscon_5410x.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/syscon_5410x.h ./chip/inc/syscon_5410x.h
+--- a_tnusFF/chip/inc/syscon_5410x.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/syscon_5410x.h	2016-10-22 23:17:43.572840278 -0300
 @@ -0,0 +1,575 @@
 +/*
 + * @brief LPC5410X System & Control driver inclusion file
@@ -18287,9 +18287,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __SYSCON_5410X_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/timer_5410x.h ./chip/inc/timer_5410x.h
---- a_hU9URB/chip/inc/timer_5410x.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/timer_5410x.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/timer_5410x.h ./chip/inc/timer_5410x.h
+--- a_tnusFF/chip/inc/timer_5410x.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/timer_5410x.h	2016-10-22 23:17:43.576840278 -0300
 @@ -0,0 +1,456 @@
 +/*
 + * @brief LPC5410X 32-bit Timer/PWM driver
@@ -18747,9 +18747,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __TIMER_5410X_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/uart_5410x.h ./chip/inc/uart_5410x.h
---- a_hU9URB/chip/inc/uart_5410x.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/uart_5410x.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/uart_5410x.h ./chip/inc/uart_5410x.h
+--- a_tnusFF/chip/inc/uart_5410x.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/uart_5410x.h	2016-10-22 23:17:43.576840278 -0300
 @@ -0,0 +1,539 @@
 +/*
 + * @brief LPC5410X UART driver
@@ -19290,9 +19290,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __UART_5410X_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/utick_5410x.h ./chip/inc/utick_5410x.h
---- a_hU9URB/chip/inc/utick_5410x.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/utick_5410x.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/utick_5410x.h ./chip/inc/utick_5410x.h
+--- a_tnusFF/chip/inc/utick_5410x.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/utick_5410x.h	2016-10-22 23:17:43.576840278 -0300
 @@ -0,0 +1,174 @@
 +/*
 + * @brief LPC5410X Micro Tick chip driver
@@ -19468,9 +19468,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __UTICK_5410X_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/inc/wwdt_5410x.h ./chip/inc/wwdt_5410x.h
---- a_hU9URB/chip/inc/wwdt_5410x.h	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/inc/wwdt_5410x.h	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/inc/wwdt_5410x.h ./chip/inc/wwdt_5410x.h
+--- a_tnusFF/chip/inc/wwdt_5410x.h	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/inc/wwdt_5410x.h	2016-10-22 23:17:43.576840278 -0300
 @@ -0,0 +1,253 @@
 +/*
 + * @brief LPC5410X WWDT chip driver
@@ -19725,9 +19725,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __WWDT_5410X_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/libs/libpower.hex ./chip/libs/libpower.hex
---- a_hU9URB/chip/libs/libpower.hex	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/libs/libpower.hex	2016-10-15 16:59:55.820704153 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/libs/libpower.hex ./chip/libs/libpower.hex
+--- a_tnusFF/chip/libs/libpower.hex	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/libs/libpower.hex	2016-10-22 23:17:43.576840278 -0300
 @@ -0,0 +1,435 @@
 +:10000000213C617263683E0A2F202020202020209E
 +:100010002020202020202020313433383338323043
@@ -20164,9 +20164,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +:101B00000000020000000A010000020000000A01BB
 +:0A1B10000000000000001E010000AC
 +:00000001FF
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/libs/libpower_m0.hex ./chip/libs/libpower_m0.hex
---- a_hU9URB/chip/libs/libpower_m0.hex	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/libs/libpower_m0.hex	2016-10-15 16:59:52.340704096 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/libs/libpower_m0.hex ./chip/libs/libpower_m0.hex
+--- a_tnusFF/chip/libs/libpower_m0.hex	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/libs/libpower_m0.hex	2016-10-22 23:17:43.576840278 -0300
 @@ -0,0 +1,443 @@
 +:10000000213C617263683E0A2F202020202020209E
 +:100010002020202020202020313433383338323043
@@ -20611,9 +20611,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +:101B800000000A010000020000000A01000002003B
 +:0E1B900000000A010000020000000A0100002F
 +:00000001FF
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/libs/libpower_m4f_hard.hex ./chip/libs/libpower_m4f_hard.hex
---- a_hU9URB/chip/libs/libpower_m4f_hard.hex	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/libs/libpower_m4f_hard.hex	2016-10-15 16:59:49.348704048 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/libs/libpower_m4f_hard.hex ./chip/libs/libpower_m4f_hard.hex
+--- a_tnusFF/chip/libs/libpower_m4f_hard.hex	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/libs/libpower_m4f_hard.hex	2016-10-22 23:17:43.576840278 -0300
 @@ -0,0 +1,435 @@
 +:10000000213C617263683E0A2F202020202020209E
 +:10001000202020202020202031343338333831393B
@@ -21050,9 +21050,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +:101B000000000A010000020000000A0100000200BB
 +:0E1B100000000A010000000000001E0100009D
 +:00000001FF
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/src/adc_5410x.c ./chip/src/adc_5410x.c
---- a_hU9URB/chip/src/adc_5410x.c	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/src/adc_5410x.c	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/src/adc_5410x.c ./chip/src/adc_5410x.c
+--- a_tnusFF/chip/src/adc_5410x.c	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/src/adc_5410x.c	2016-10-22 23:17:43.576840278 -0300
 @@ -0,0 +1,129 @@
 +/*
 + * @brief LPC5410X ADC driver
@@ -21183,9 +21183,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +
 +	Chip_ADC_SetDivider(pADC, (uint8_t) div - 1);
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/src/chip_5410x.c ./chip/src/chip_5410x.c
---- a_hU9URB/chip/src/chip_5410x.c	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/src/chip_5410x.c	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/src/chip_5410x.c ./chip/src/chip_5410x.c
+--- a_tnusFF/chip/src/chip_5410x.c	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/src/chip_5410x.c	2016-10-22 23:17:43.576840278 -0300
 @@ -0,0 +1,59 @@
 +/*
 + * @brief LPC5410X Miscellaneous chip specific functions
@@ -21246,9 +21246,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +	/* CPU core speed (main clock speed adjusted by system clock divider) */
 +	SystemCoreClock = Chip_Clock_GetSystemClockRate();
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/src/clock_5410x.c ./chip/src/clock_5410x.c
---- a_hU9URB/chip/src/clock_5410x.c	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/src/clock_5410x.c	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/src/clock_5410x.c ./chip/src/clock_5410x.c
+--- a_tnusFF/chip/src/clock_5410x.c	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/src/clock_5410x.c	2016-10-22 23:17:43.580840278 -0300
 @@ -0,0 +1,393 @@
 +/*
 + * @brief LPC5410X clock driver
@@ -21643,9 +21643,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +
 +	return Chip_Clock_GetUARTBaseClockRate();
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/src/crc_5410x.c ./chip/src/crc_5410x.c
---- a_hU9URB/chip/src/crc_5410x.c	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/src/crc_5410x.c	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/src/crc_5410x.c ./chip/src/crc_5410x.c
+--- a_tnusFF/chip/src/crc_5410x.c	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/src/crc_5410x.c	2016-10-22 23:17:43.580840278 -0300
 @@ -0,0 +1,118 @@
 +/*
 + * @brief LPC5410X Cyclic Redundancy Check (CRC) Engine driver
@@ -21765,9 +21765,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +
 +	return Chip_CRC_Sum();
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/src/dma_5410x.c ./chip/src/dma_5410x.c
---- a_hU9URB/chip/src/dma_5410x.c	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/src/dma_5410x.c	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/src/dma_5410x.c ./chip/src/dma_5410x.c
+--- a_tnusFF/chip/src/dma_5410x.c	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/src/dma_5410x.c	2016-10-22 23:17:43.580840278 -0300
 @@ -0,0 +1,67 @@
 +/*
 + * @brief DMA driver declarations and functions
@@ -21836,9 +21836,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +
 +	return good;
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/src/fifo_5410x.c ./chip/src/fifo_5410x.c
---- a_hU9URB/chip/src/fifo_5410x.c	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/src/fifo_5410x.c	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/src/fifo_5410x.c ./chip/src/fifo_5410x.c
+--- a_tnusFF/chip/src/fifo_5410x.c	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/src/fifo_5410x.c	2016-10-22 23:17:43.580840278 -0300
 @@ -0,0 +1,306 @@
 +/*
 + * @brief LPC5410X System FIFO chip driver
@@ -22146,9 +22146,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +}
 +
 +#endif
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/src/fpu_init.c ./chip/src/fpu_init.c
---- a_hU9URB/chip/src/fpu_init.c	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/src/fpu_init.c	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/src/fpu_init.c ./chip/src/fpu_init.c
+--- a_tnusFF/chip/src/fpu_init.c	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/src/fpu_init.c	2016-10-22 23:17:43.580840278 -0300
 @@ -0,0 +1,96 @@
 +/*
 + * @brief FPU init code
@@ -22246,9 +22246,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +}
 +
 +#endif /* defined(CORE_M4 */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/src/gpio_5410x.c ./chip/src/gpio_5410x.c
---- a_hU9URB/chip/src/gpio_5410x.c	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/src/gpio_5410x.c	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/src/gpio_5410x.c ./chip/src/gpio_5410x.c
+--- a_tnusFF/chip/src/gpio_5410x.c	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/src/gpio_5410x.c	2016-10-22 23:17:43.580840278 -0300
 @@ -0,0 +1,108 @@
 +/*
 + * @brief LPC5410X GPIO driver
@@ -22358,9 +22358,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +		Chip_GPIO_SetPortDIRInput(pGPIO, port, pinMask);
 +	}
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/src/gpiogroup_5410x.c ./chip/src/gpiogroup_5410x.c
---- a_hU9URB/chip/src/gpiogroup_5410x.c	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/src/gpiogroup_5410x.c	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/src/gpiogroup_5410x.c ./chip/src/gpiogroup_5410x.c
+--- a_tnusFF/chip/src/gpiogroup_5410x.c	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/src/gpiogroup_5410x.c	2016-10-22 23:17:43.580840278 -0300
 @@ -0,0 +1,48 @@
 +/*
 + * @brief LPC5410x GPIO group driver
@@ -22410,9 +22410,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +/*****************************************************************************
 + * Public functions
 + ****************************************************************************/
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/src/i2cm_5410x.c ./chip/src/i2cm_5410x.c
---- a_hU9URB/chip/src/i2cm_5410x.c	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/src/i2cm_5410x.c	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/src/i2cm_5410x.c ./chip/src/i2cm_5410x.c
+--- a_tnusFF/chip/src/i2cm_5410x.c	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/src/i2cm_5410x.c	2016-10-22 23:17:43.580840278 -0300
 @@ -0,0 +1,226 @@
 +/*
 + * @brief LPC5410x I2C master driver
@@ -22640,9 +22640,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +
 +	return xfer->status == I2CM_STATUS_OK;
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/src/i2cs_5410x.c ./chip/src/i2cs_5410x.c
---- a_hU9URB/chip/src/i2cs_5410x.c	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/src/i2cs_5410x.c	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/src/i2cs_5410x.c ./chip/src/i2cs_5410x.c
+--- a_tnusFF/chip/src/i2cs_5410x.c	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/src/i2cs_5410x.c	2016-10-22 23:17:43.580840278 -0300
 @@ -0,0 +1,104 @@
 +/*
 + * @brief LPC5410x I2C slave driver
@@ -22748,9 +22748,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +
 +	return xferDone;
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/src/iap.c ./chip/src/iap.c
---- a_hU9URB/chip/src/iap.c	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/src/iap.c	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/src/iap.c ./chip/src/iap.c
+--- a_tnusFF/chip/src/iap.c	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/src/iap.c	2016-10-22 23:23:55.480850238 -0300
 @@ -0,0 +1,175 @@
 +/*
 + * @brief Common FLASH support functions
@@ -22804,7 +22804,7 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +/* Prepare sector for write operation */
 +uint8_t Chip_IAP_PreSectorForReadWrite(uint32_t strSector, uint32_t endSector)
 +{
-+	uint32_t command[5], result[4];
++	unsigned int command[5], result[4];
 +
 +	command[0] = IAP_PREWRRITE_CMD;
 +	command[1] = strSector;
@@ -22817,7 +22817,7 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +/* Copy RAM to flash */
 +uint8_t Chip_IAP_CopyRamToFlash(uint32_t dstAdd, uint32_t *srcAdd, uint32_t byteswrt)
 +{
-+	uint32_t command[5], result[4];
++	unsigned int command[5], result[4];
 +
 +	command[0] = IAP_WRISECTOR_CMD;
 +	command[1] = dstAdd;
@@ -22832,7 +22832,7 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +/* Erase sector */
 +uint8_t Chip_IAP_EraseSector(uint32_t strSector, uint32_t endSector)
 +{
-+	uint32_t command[5], result[4];
++	unsigned int command[5], result[4];
 +
 +	command[0] = IAP_ERSSECTOR_CMD;
 +	command[1] = strSector;
@@ -22846,7 +22846,7 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +/* Blank check sector */
 +uint8_t Chip_IAP_BlankCheckSector(uint32_t strSector, uint32_t endSector)
 +{
-+	uint32_t command[5], result[4];
++	unsigned int command[5], result[4];
 +
 +	command[0] = IAP_BLANK_CHECK_SECTOR_CMD;
 +	command[1] = strSector;
@@ -22859,7 +22859,7 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +/* Read part identification number */
 +uint32_t Chip_IAP_ReadPID()
 +{
-+	uint32_t command[5], result[4];
++	unsigned int command[5], result[4];
 +
 +	command[0] = IAP_REPID_CMD;
 +	iap_entry(command, result);
@@ -22870,7 +22870,7 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +/* Read boot code version number */
 +uint8_t Chip_IAP_ReadBootCode()
 +{
-+	uint32_t command[5], result[4];
++	unsigned int command[5], result[4];
 +
 +	command[0] = IAP_READ_BOOT_CODE_CMD;
 +	iap_entry(command, result);
@@ -22881,7 +22881,7 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +/* IAP compare */
 +uint8_t Chip_IAP_Compare(uint32_t dstAdd, uint32_t srcAdd, uint32_t bytescmp)
 +{
-+	uint32_t command[5], result[4];
++	unsigned int command[5], result[4];
 +
 +	command[0] = IAP_COMPARE_CMD;
 +	command[1] = dstAdd;
@@ -22895,7 +22895,7 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +/* Reinvoke ISP */
 +uint8_t Chip_IAP_ReinvokeISP()
 +{
-+	uint32_t command[5], result[4];
++	unsigned int command[5], result[4];
 +
 +	command[0] = IAP_REINVOKE_ISP_CMD;
 +	iap_entry(command, result);
@@ -22906,7 +22906,7 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +/* Read the unique ID */
 +uint32_t Chip_IAP_ReadUID()
 +{
-+	uint32_t command[5], result[4];
++	unsigned int command[5], result[4];
 +
 +	command[0] = IAP_READ_UID_CMD;
 +	iap_entry(command, result);
@@ -22917,7 +22917,7 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +/* Erase page */
 +uint8_t Chip_IAP_ErasePage(uint32_t strPage, uint32_t endPage)
 +{
-+	uint32_t command[5], result[4];
++	unsigned int command[5], result[4];
 +
 +	command[0] = IAP_ERASE_PAGE_CMD;
 +	command[1] = strPage;
@@ -22927,9 +22927,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +
 +	return result[0];
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/src/iocon_5410x.c ./chip/src/iocon_5410x.c
---- a_hU9URB/chip/src/iocon_5410x.c	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/src/iocon_5410x.c	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/src/iocon_5410x.c ./chip/src/iocon_5410x.c
+--- a_tnusFF/chip/src/iocon_5410x.c	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/src/iocon_5410x.c	2016-10-22 23:17:43.580840278 -0300
 @@ -0,0 +1,58 @@
 +/*
 + * @brief LPC5410X IOCON driver
@@ -22989,9 +22989,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +		Chip_IOCON_PinMuxSet(pIOCON, pinArray[ix].port, pinArray[ix].pin, pinArray[ix].modefunc);
 +	}
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/src/pinint_5410x.c ./chip/src/pinint_5410x.c
---- a_hU9URB/chip/src/pinint_5410x.c	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/src/pinint_5410x.c	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/src/pinint_5410x.c ./chip/src/pinint_5410x.c
+--- a_tnusFF/chip/src/pinint_5410x.c	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/src/pinint_5410x.c	2016-10-22 23:17:43.580840278 -0300
 @@ -0,0 +1,79 @@
 +/*
 + * @brief LPC5410X Pin Interrupt and Pattern Match Registers and driver
@@ -23072,9 +23072,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +		}
 +	}
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/src/pll_5410x.c ./chip/src/pll_5410x.c
---- a_hU9URB/chip/src/pll_5410x.c	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/src/pll_5410x.c	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/src/pll_5410x.c ./chip/src/pll_5410x.c
+--- a_tnusFF/chip/src/pll_5410x.c	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/src/pll_5410x.c	2016-10-22 23:17:43.580840278 -0300
 @@ -0,0 +1,884 @@
 +/*
 + * @brief LPC5410X PLL driver
@@ -23960,9 +23960,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +
 +	curPllRate = 0;
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/src/ring_buffer.c ./chip/src/ring_buffer.c
---- a_hU9URB/chip/src/ring_buffer.c	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/src/ring_buffer.c	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/src/ring_buffer.c ./chip/src/ring_buffer.c
+--- a_tnusFF/chip/src/ring_buffer.c	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/src/ring_buffer.c	2016-10-22 23:21:09.408845790 -0300
 @@ -0,0 +1,181 @@
 +/*
 + * @brief Common ring buffer support functions
@@ -24029,7 +24029,7 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +	RingBuff->itemSz = itemSize;
 +	RingBuff->head = RingBuff->tail = 0;
 +	if (!cpyFunc) {
-+		cpyFunc = memcpy;
++		cpyFunc = (void *(*)(void *, const void *, uint32_t)) memcpy;
 +	}
 +	RingBuff->copy = cpyFunc;
 +
@@ -24145,9 +24145,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +
 +	return cnt1 + cnt2;
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/src/ritimer_5410x.c ./chip/src/ritimer_5410x.c
---- a_hU9URB/chip/src/ritimer_5410x.c	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/src/ritimer_5410x.c	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/src/ritimer_5410x.c ./chip/src/ritimer_5410x.c
+--- a_tnusFF/chip/src/ritimer_5410x.c	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/src/ritimer_5410x.c	2016-10-22 23:17:43.584840278 -0300
 @@ -0,0 +1,105 @@
 +/*
 + * @brief LPC5410X RITimer chip driver
@@ -24254,9 +24254,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +
 +	return (IntStatus) result;
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/src/rtc_ut.c ./chip/src/rtc_ut.c
---- a_hU9URB/chip/src/rtc_ut.c	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/src/rtc_ut.c	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/src/rtc_ut.c ./chip/src/rtc_ut.c
+--- a_tnusFF/chip/src/rtc_ut.c	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/src/rtc_ut.c	2016-10-22 23:17:43.584840278 -0300
 @@ -0,0 +1,202 @@
 +/*
 + * @brief RTC tick to (a more) Universal Time
@@ -24460,9 +24460,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +
 +	*rtcTick = rtcTicks;
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/src/sct_5410x.c ./chip/src/sct_5410x.c
---- a_hU9URB/chip/src/sct_5410x.c	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/src/sct_5410x.c	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/src/sct_5410x.c ./chip/src/sct_5410x.c
+--- a_tnusFF/chip/src/sct_5410x.c	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/src/sct_5410x.c	2016-10-22 23:17:43.584840278 -0300
 @@ -0,0 +1,81 @@
 +/*
 + * @brief LPC5410X State Configurable Timer driver
@@ -24545,9 +24545,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +	tem = pSCT->RES & (~(0x03 << (2 * outnum)));
 +	pSCT->RES = tem | (value << (2 * outnum));
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/src/sct_pwm_5410x.c ./chip/src/sct_pwm_5410x.c
---- a_hU9URB/chip/src/sct_pwm_5410x.c	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/src/sct_pwm_5410x.c	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/src/sct_pwm_5410x.c ./chip/src/sct_pwm_5410x.c
+--- a_tnusFF/chip/src/sct_pwm_5410x.c	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/src/sct_pwm_5410x.c	2016-10-22 23:17:43.584840278 -0300
 @@ -0,0 +1,86 @@
 +/*
 + * @brief LPC5410x State Configurable Timer PWM driver
@@ -24635,9 +24635,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +	/* Set SCT Counter to count 32-bits and reset to 0 after reaching MATCH0 */
 +	Chip_SCT_Config(pSCT, SCT_CONFIG_32BIT_COUNTER | SCT_CONFIG_AUTOLIMIT_L);
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/src/spi_common_5410x.c ./chip/src/spi_common_5410x.c
---- a_hU9URB/chip/src/spi_common_5410x.c	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/src/spi_common_5410x.c	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/src/spi_common_5410x.c ./chip/src/spi_common_5410x.c
+--- a_tnusFF/chip/src/spi_common_5410x.c	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/src/spi_common_5410x.c	2016-10-22 23:17:43.584840278 -0300
 @@ -0,0 +1,71 @@
 +/*
 + * @brief LPC5410X SPI driver
@@ -24710,9 +24710,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +	/* Deassert all chip selects, only in master mode */
 +	pSPI->TXCTRL = SPI_TXDATCTL_DEASSERT_ALL;
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/src/spim_5410x.c ./chip/src/spim_5410x.c
---- a_hU9URB/chip/src/spim_5410x.c	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/src/spim_5410x.c	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/src/spim_5410x.c ./chip/src/spim_5410x.c
+--- a_tnusFF/chip/src/spim_5410x.c	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/src/spim_5410x.c	2016-10-22 23:17:43.584840278 -0300
 @@ -0,0 +1,201 @@
 +/*
 + * @brief LPC5410X SPI master driver
@@ -24915,9 +24915,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +		Chip_SPIM_XferHandler(pSPI, xfer);
 +	}
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/src/spis_5410x.c ./chip/src/spis_5410x.c
---- a_hU9URB/chip/src/spis_5410x.c	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/src/spis_5410x.c	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/src/spis_5410x.c ./chip/src/spis_5410x.c
+--- a_tnusFF/chip/src/spis_5410x.c	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/src/spis_5410x.c	2016-10-22 23:17:43.584840278 -0300
 @@ -0,0 +1,154 @@
 +/*
 + * @brief LPC5410X SPI master driver
@@ -25073,9 +25073,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +
 +	return status;
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/src/stopwatch_5410x.c ./chip/src/stopwatch_5410x.c
---- a_hU9URB/chip/src/stopwatch_5410x.c	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/src/stopwatch_5410x.c	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/src/stopwatch_5410x.c ./chip/src/stopwatch_5410x.c
+--- a_tnusFF/chip/src/stopwatch_5410x.c	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/src/stopwatch_5410x.c	2016-10-22 23:17:43.584840278 -0300
 @@ -0,0 +1,109 @@
 +/*
 + * @brief LPC5410x specific stopwatch implementation
@@ -25186,9 +25186,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +{
 +	return uS * ticksPerUs;
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/src/syscon_5410x.c ./chip/src/syscon_5410x.c
---- a_hU9URB/chip/src/syscon_5410x.c	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/src/syscon_5410x.c	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/src/syscon_5410x.c ./chip/src/syscon_5410x.c
+--- a_tnusFF/chip/src/syscon_5410x.c	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/src/syscon_5410x.c	2016-10-22 23:17:43.584840278 -0300
 @@ -0,0 +1,192 @@
 +/*
 + * @brief LPC5410X System & Control driver
@@ -25382,9 +25382,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +	/* Enable peripheral states by setting low */
 +	LPC_SYSCON->PDRUNCFGCLR = powerupmask;
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/src/sysinit_5410x.c ./chip/src/sysinit_5410x.c
---- a_hU9URB/chip/src/sysinit_5410x.c	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/src/sysinit_5410x.c	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/src/sysinit_5410x.c ./chip/src/sysinit_5410x.c
+--- a_tnusFF/chip/src/sysinit_5410x.c	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/src/sysinit_5410x.c	2016-10-22 23:17:43.584840278 -0300
 @@ -0,0 +1,169 @@
 +/*
 + * @brief LPC5410X Chip specific SystemInit
@@ -25555,9 +25555,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +	/* Initial internal clocking @100MHz */
 +	Chip_SetupIrcClocking(96000000);
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/src/timer_5410x.c ./chip/src/timer_5410x.c
---- a_hU9URB/chip/src/timer_5410x.c	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/src/timer_5410x.c	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/src/timer_5410x.c ./chip/src/timer_5410x.c
+--- a_tnusFF/chip/src/timer_5410x.c	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/src/timer_5410x.c	2016-10-22 23:17:43.584840278 -0300
 @@ -0,0 +1,133 @@
 +/*
 + * @brief LPC5410X 32-bit Timer/PWM driver
@@ -25692,9 +25692,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +	pTMR->EMR = reg | (((uint32_t) initial_state) << matchnum) |
 +				(((uint32_t) matchState) << (4 + (matchnum * 2)));
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/src/uart_5410x.c ./chip/src/uart_5410x.c
---- a_hU9URB/chip/src/uart_5410x.c	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/src/uart_5410x.c	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/src/uart_5410x.c ./chip/src/uart_5410x.c
+--- a_tnusFF/chip/src/uart_5410x.c	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/src/uart_5410x.c	2016-10-22 23:17:43.584840278 -0300
 @@ -0,0 +1,364 @@
 +/*
 + * @brief LPC5410X UART driver
@@ -26060,9 +26060,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +	/* Handle receive interrupt */
 +	Chip_UART_RXIntHandlerRB(pUART, pRXRB);
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/chip/src/wwdt_5410x.c ./chip/src/wwdt_5410x.c
---- a_hU9URB/chip/src/wwdt_5410x.c	1969-12-31 21:00:00.000000000 -0300
-+++ ./chip/src/wwdt_5410x.c	2016-08-10 21:57:27.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/chip/src/wwdt_5410x.c ./chip/src/wwdt_5410x.c
+--- a_tnusFF/chip/src/wwdt_5410x.c	1969-12-31 21:00:00.000000000 -0300
++++ ./chip/src/wwdt_5410x.c	2016-10-22 23:17:43.584840278 -0300
 @@ -0,0 +1,61 @@
 +/*
 + * @brief LPC5410X WWDT chip driver
@@ -26125,21 +26125,25 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +	pWWDT->WARNINT   = 0x3FF;
 +	pWWDT->WINDOW    = 0xFFFFFF;
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/config.mk ./config.mk
---- a_hU9URB/config.mk	1969-12-31 21:00:00.000000000 -0300
-+++ ./config.mk	2016-10-15 19:16:07.840836634 -0300
-@@ -0,0 +1,8 @@
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/config.mk ./config.mk
+--- a_tnusFF/config.mk	1969-12-31 21:00:00.000000000 -0300
++++ ./config.mk	2016-10-22 23:24:26.052851056 -0300
+@@ -0,0 +1,12 @@
++# Executable name
 +APP=${{Program_Name string:blinking}}
 +
 +MODULES=app base board chip
 +DEFINES=CORE_M4 __USE_LPCOPEN __USE_NEWLIB __LPC5410X__ __CODE_RED
 +LIBRARY=power_m4f_hard
 +
++# Verbose Build: no|yes
 +VERBOSE=${{Verbose_Build items:no|yes}}
++
++# Optimization Level: debug|none|basic|standar|full|size|speed
 +OPT_LEVEL=${{Optimization_Level items:debug|none|basic|standar|full|size|speed}}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/linker.ld ./linker.ld
---- a_hU9URB/linker.ld	1969-12-31 21:00:00.000000000 -0300
-+++ ./linker.ld	2016-10-14 22:19:40.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/linker.ld ./linker.ld
+--- a_tnusFF/linker.ld	1969-12-31 21:00:00.000000000 -0300
++++ ./linker.ld	2016-10-22 23:17:43.588840279 -0300
 @@ -0,0 +1,253 @@
 +
 +MEMORY
@@ -26394,9 +26398,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 + libc.a
 + libm.a
 +)
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/Makefile ./Makefile
---- a_hU9URB/Makefile	1969-12-31 21:00:00.000000000 -0300
-+++ ./Makefile	2016-10-15 19:12:34.664833178 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/Makefile ./Makefile
+--- a_tnusFF/Makefile	1969-12-31 21:00:00.000000000 -0300
++++ ./Makefile	2016-10-22 23:17:43.588840279 -0300
 @@ -0,0 +1,105 @@
 +include config.mk
 +
@@ -26503,9 +26507,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +	$(Q)rm -fR $(OBJECTS) $(TARGET) $(TARGET_BIN) $(TARGET_LST) $(DEPS) $(LIBSDEPS)
 +
 +.PHONY: all size clean program
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_hU9URB/oocd.cfg ./oocd.cfg
---- a_hU9URB/oocd.cfg	1969-12-31 21:00:00.000000000 -0300
-+++ ./oocd.cfg	2016-10-14 22:19:41.000000000 -0300
+diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_tnusFF/oocd.cfg ./oocd.cfg
+--- a_tnusFF/oocd.cfg	1969-12-31 21:00:00.000000000 -0300
++++ ./oocd.cfg	2016-10-22 23:17:43.588840279 -0300
 @@ -0,0 +1,90 @@
 +###############################################################################
 +#
