@@ -1,6 +1,6 @@
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/app/src/main.c ./app/src/main.c
---- a_HTOeHw/app/src/main.c 1969-12-31 21:00:00.000000000 -0300
-+++ ./app/src/main.c    2016-10-08 23:17:10.683834304 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/app/src/main.c ./app/src/main.c
+--- a_8FkA5l/app/src/main.c	1969-12-31 21:00:00.000000000 -0300
++++ ./app/src/main.c	2017-02-27 20:42:08.260009486 -0300
 @@ -0,0 +1,27 @@
 +#include "board.h"
 +
@@ -29,9 +29,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +       printf("Hola mundo at %d\r\n", tick_ct);
 +   }
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/ciaa_lpc4337.ld ./ciaa_lpc4337.ld
---- a_HTOeHw/ciaa_lpc4337.ld    1969-12-31 21:00:00.000000000 -0300
-+++ ./ciaa_lpc4337.ld   2015-08-26 23:58:04.412182565 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/ciaa_lpc4337.ld ./ciaa_lpc4337.ld
+--- a_8FkA5l/ciaa_lpc4337.ld	1969-12-31 21:00:00.000000000 -0300
++++ ./ciaa_lpc4337.ld	2017-02-27 20:42:08.260009486 -0300
 @@ -0,0 +1,278 @@
 +GROUP(
 +  libgcc.a
@@ -311,9 +311,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +    PROVIDE(_pvHeapStart = .);
 +    PROVIDE(_vStackTop = __top_RamLoc32 - 0);
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/ciaa-nxp.cfg ./ciaa-nxp.cfg
---- a_HTOeHw/ciaa-nxp.cfg   1969-12-31 21:00:00.000000000 -0300
-+++ ./ciaa-nxp.cfg  2015-08-25 22:15:47.580155159 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/ciaa-nxp.cfg ./ciaa-nxp.cfg
+--- a_8FkA5l/ciaa-nxp.cfg	1969-12-31 21:00:00.000000000 -0300
++++ ./ciaa-nxp.cfg	2017-02-27 20:42:08.260009486 -0300
 @@ -0,0 +1,161 @@
 +###############################################################################
 +#
@@ -476,19 +476,23 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +   echo "Reset Halt, due to gdb attached...!"
 +   reset halt
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/config.mk ./config.mk
---- a_HTOeHw/config.mk  1969-12-31 21:00:00.000000000 -0300
-+++ ./config.mk 2016-10-08 23:30:32.179830357 -0300
-@@ -0,0 +1,6 @@
-+APP=${{Application_Name string:blinking}}
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/config.mk ./config.mk
+--- a_8FkA5l/config.mk	1969-12-31 21:00:00.000000000 -0300
++++ ./config.mk	2017-02-27 20:48:55.680020397 -0300
+@@ -0,0 +1,10 @@
++APP=${{Program_Name string:blinking}}
 +
 +MODULES=app lpc_chip_43xx lpc_board_ciaa_edu_4337
 +DEFINES=CORE_M4 __USE_LPCOPEN __USE_NEWLIB
 +
-+VERBOSE=${{Verbose_build items:y|n}}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_board_ciaa_edu_4337/inc/board_api.h ./lpc_board_ciaa_edu_4337/inc/board_api.h
---- a_HTOeHw/lpc_board_ciaa_edu_4337/inc/board_api.h    1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_board_ciaa_edu_4337/inc/board_api.h   2016-10-08 23:15:59.519834655 -0300
++VERBOSE=${{Verbose_Build items:n|y}}
++OPT=${{Optimization_Level items:g|0|1|2|3|s|fast}}
++USE_NANO=${{Newlib_NANO items:y|n}}
++SEMIHOST=${{Use_semihosting items:n|y}}
++USE_FPU=${{Use_FPU items:y|n}}
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_board_ciaa_edu_4337/inc/board_api.h ./lpc_board_ciaa_edu_4337/inc/board_api.h
+--- a_8FkA5l/lpc_board_ciaa_edu_4337/inc/board_api.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_board_ciaa_edu_4337/inc/board_api.h	2017-02-27 20:42:08.316009488 -0300
 @@ -0,0 +1,176 @@
 +/*
 + * @brief Common board API functions
@@ -666,9 +670,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __BOARD_API_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_board_ciaa_edu_4337/inc/board.h ./lpc_board_ciaa_edu_4337/inc/board.h
---- a_HTOeHw/lpc_board_ciaa_edu_4337/inc/board.h    1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_board_ciaa_edu_4337/inc/board.h   2016-10-08 23:17:47.211834124 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_board_ciaa_edu_4337/inc/board.h ./lpc_board_ciaa_edu_4337/inc/board.h
+--- a_8FkA5l/lpc_board_ciaa_edu_4337/inc/board.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_board_ciaa_edu_4337/inc/board.h	2017-02-27 20:42:08.316009488 -0300
 @@ -0,0 +1,178 @@
 +/*
 + * @brief NGX Xplorer 4330 board file
@@ -848,9 +852,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __BOARD_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_board_ciaa_edu_4337/src/board.c ./lpc_board_ciaa_edu_4337/src/board.c
---- a_HTOeHw/lpc_board_ciaa_edu_4337/src/board.c    1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_board_ciaa_edu_4337/src/board.c   2016-10-08 23:18:18.979833968 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_board_ciaa_edu_4337/src/board.c ./lpc_board_ciaa_edu_4337/src/board.c
+--- a_8FkA5l/lpc_board_ciaa_edu_4337/src/board.c	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_board_ciaa_edu_4337/src/board.c	2017-02-27 20:42:08.368009489 -0300
 @@ -0,0 +1,201 @@
 +/*
 + * Copyright(C) NXP Semiconductors, 2012
@@ -1053,9 +1057,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +/**
 + * @}
 + */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_board_ciaa_edu_4337/src/board_sysinit.c ./lpc_board_ciaa_edu_4337/src/board_sysinit.c
---- a_HTOeHw/lpc_board_ciaa_edu_4337/src/board_sysinit.c    1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_board_ciaa_edu_4337/src/board_sysinit.c   2016-10-08 23:25:57.471831710 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_board_ciaa_edu_4337/src/board_sysinit.c ./lpc_board_ciaa_edu_4337/src/board_sysinit.c
+--- a_8FkA5l/lpc_board_ciaa_edu_4337/src/board_sysinit.c	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_board_ciaa_edu_4337/src/board_sysinit.c	2017-02-27 20:42:08.368009489 -0300
 @@ -0,0 +1,143 @@
 +/*
 + * Copyright(C) NXP Semiconductors, 2012
@@ -1200,16 +1204,16 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +   Board_SetupMuxing();
 +   Board_SetupClocking();
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_board_ciaa_edu_4337/src/crp.c ./lpc_board_ciaa_edu_4337/src/crp.c
---- a_HTOeHw/lpc_board_ciaa_edu_4337/src/crp.c  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_board_ciaa_edu_4337/src/crp.c 2015-08-11 20:38:20.214107370 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_board_ciaa_edu_4337/src/crp.c ./lpc_board_ciaa_edu_4337/src/crp.c
+--- a_8FkA5l/lpc_board_ciaa_edu_4337/src/crp.c	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_board_ciaa_edu_4337/src/crp.c	2017-02-27 20:42:08.368009489 -0300
 @@ -0,0 +1,3 @@
 +#define CRP_NO_CRP          0xFFFFFFFF
 +
 +__attribute__ ((used,section(".crp"))) const unsigned int CRP_WORD = CRP_NO_CRP ;
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_board_ciaa_edu_4337/src/cr_startup_lpc43xx.c ./lpc_board_ciaa_edu_4337/src/cr_startup_lpc43xx.c
---- a_HTOeHw/lpc_board_ciaa_edu_4337/src/cr_startup_lpc43xx.c   1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_board_ciaa_edu_4337/src/cr_startup_lpc43xx.c  2014-12-04 16:51:28.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_board_ciaa_edu_4337/src/cr_startup_lpc43xx.c ./lpc_board_ciaa_edu_4337/src/cr_startup_lpc43xx.c
+--- a_8FkA5l/lpc_board_ciaa_edu_4337/src/cr_startup_lpc43xx.c	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_board_ciaa_edu_4337/src/cr_startup_lpc43xx.c	2017-02-27 20:42:08.368009489 -0300
 @@ -0,0 +1,502 @@
 +//*****************************************************************************
 +// LPC43xx (Cortex-M4) Microcontroller Startup code for use with LPCXpresso IDE
@@ -1713,9 +1717,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +    while (1) {
 +    }
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_board_ciaa_edu_4337/src/sysinit.c ./lpc_board_ciaa_edu_4337/src/sysinit.c
---- a_HTOeHw/lpc_board_ciaa_edu_4337/src/sysinit.c  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_board_ciaa_edu_4337/src/sysinit.c 2014-04-24 13:01:44.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_board_ciaa_edu_4337/src/sysinit.c ./lpc_board_ciaa_edu_4337/src/sysinit.c
+--- a_8FkA5l/lpc_board_ciaa_edu_4337/src/sysinit.c	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_board_ciaa_edu_4337/src/sysinit.c	2017-02-27 20:42:08.368009489 -0300
 @@ -0,0 +1,89 @@
 +/*
 + * @brief Common SystemInit function for LPC18xx/LPC43xx chips
@@ -1806,9 +1810,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +
 +#endif /* defined(CORE_M3) || defined(CORE_M4) */
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_board_ciaa_edu_4337/src/system.c ./lpc_board_ciaa_edu_4337/src/system.c
---- a_HTOeHw/lpc_board_ciaa_edu_4337/src/system.c   1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_board_ciaa_edu_4337/src/system.c  2016-10-08 23:28:13.251831041 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_board_ciaa_edu_4337/src/system.c ./lpc_board_ciaa_edu_4337/src/system.c
+--- a_8FkA5l/lpc_board_ciaa_edu_4337/src/system.c	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_board_ciaa_edu_4337/src/system.c	2017-02-27 20:42:08.368009489 -0300
 @@ -0,0 +1,190 @@
 +#include <reent.h>
 +#include <errno.h>
@@ -2000,9 +2004,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +   SET_ERR(ENOSYS);
 +   return -1;
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/adc_18xx_43xx.h ./lpc_chip_43xx/inc/adc_18xx_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/adc_18xx_43xx.h  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/adc_18xx_43xx.h 2015-08-08 23:28:06.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/adc_18xx_43xx.h ./lpc_chip_43xx/inc/adc_18xx_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/adc_18xx_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/adc_18xx_43xx.h	2017-02-27 20:42:08.420009491 -0300
 @@ -0,0 +1,268 @@
 +/*
 + * @brief  LPC18xx/43xx A/D conversion driver
@@ -2272,9 +2276,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __ADC_18XX_43XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/aes_18xx_43xx.h ./lpc_chip_43xx/inc/aes_18xx_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/aes_18xx_43xx.h  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/aes_18xx_43xx.h 2015-08-08 23:28:06.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/aes_18xx_43xx.h ./lpc_chip_43xx/inc/aes_18xx_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/aes_18xx_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/aes_18xx_43xx.h	2017-02-27 20:42:08.420009491 -0300
 @@ -0,0 +1,161 @@
 +/*
 + * @brief LPC18xx/43xx AES Engine driver
@@ -2437,9 +2441,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __AES_18XX_43XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/atimer_18xx_43xx.h ./lpc_chip_43xx/inc/atimer_18xx_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/atimer_18xx_43xx.h   1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/atimer_18xx_43xx.h  2015-08-08 23:28:04.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/atimer_18xx_43xx.h ./lpc_chip_43xx/inc/atimer_18xx_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/atimer_18xx_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/atimer_18xx_43xx.h	2017-02-27 20:42:08.420009491 -0300
 @@ -0,0 +1,143 @@
 +/*
 + * @brief LPC18xx/43xx Alarm Timer driver
@@ -2584,9 +2588,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __ATIMER_18XX_43XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/ccan_18xx_43xx.h ./lpc_chip_43xx/inc/ccan_18xx_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/ccan_18xx_43xx.h 1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/ccan_18xx_43xx.h    2015-08-08 23:28:06.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/ccan_18xx_43xx.h ./lpc_chip_43xx/inc/ccan_18xx_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/ccan_18xx_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/ccan_18xx_43xx.h	2017-02-27 20:42:08.424009491 -0300
 @@ -0,0 +1,505 @@
 +/*
 + * @brief LPC18xx/43xx CCAN driver
@@ -3093,9 +3097,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __CCAN_18XX_43XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/cguccu_18xx_43xx.h ./lpc_chip_43xx/inc/cguccu_18xx_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/cguccu_18xx_43xx.h   1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/cguccu_18xx_43xx.h  2015-08-08 23:28:06.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/cguccu_18xx_43xx.h ./lpc_chip_43xx/inc/cguccu_18xx_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/cguccu_18xx_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/cguccu_18xx_43xx.h	2017-02-27 20:42:08.424009491 -0300
 @@ -0,0 +1,114 @@
 +/*
 + * @brief CGU/CCU registers and control functions
@@ -3211,9 +3215,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __CGUCCU_18XX_43XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/chip_clocks.h ./lpc_chip_43xx/inc/chip_clocks.h
---- a_HTOeHw/lpc_chip_43xx/inc/chip_clocks.h    1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/chip_clocks.h   2015-08-08 23:28:08.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/chip_clocks.h ./lpc_chip_43xx/inc/chip_clocks.h
+--- a_8FkA5l/lpc_chip_43xx/inc/chip_clocks.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/chip_clocks.h	2017-02-27 20:42:08.424009491 -0300
 @@ -0,0 +1,252 @@
 +/*
 + * @brief  LPC18xx/43xx chip clock list used by CGU and CCU drivers
@@ -3467,9 +3471,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __CHIP_CLOCKS_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/chip.h ./lpc_chip_43xx/inc/chip.h
---- a_HTOeHw/lpc_chip_43xx/inc/chip.h   1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/chip.h  2015-08-08 23:28:04.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/chip.h ./lpc_chip_43xx/inc/chip.h
+--- a_8FkA5l/lpc_chip_43xx/inc/chip.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/chip.h	2017-02-27 20:42:08.424009491 -0300
 @@ -0,0 +1,163 @@
 +/*
 + * @brief Chip inclusion selector file
@@ -3634,9 +3638,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __CHIP_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/chip_lpc18xx.h ./lpc_chip_43xx/inc/chip_lpc18xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/chip_lpc18xx.h   1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/chip_lpc18xx.h  2015-08-08 23:28:04.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/chip_lpc18xx.h ./lpc_chip_43xx/inc/chip_lpc18xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/chip_lpc18xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/chip_lpc18xx.h	2017-02-27 20:42:08.424009491 -0300
 @@ -0,0 +1,210 @@
 +/*
 + * @brief LPC18xx basic chip inclusion file
@@ -3848,9 +3852,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __CHIP_LPC18XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/chip_lpc43xx.h ./lpc_chip_43xx/inc/chip_lpc43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/chip_lpc43xx.h   1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/chip_lpc43xx.h  2015-08-08 23:28:06.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/chip_lpc43xx.h ./lpc_chip_43xx/inc/chip_lpc43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/chip_lpc43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/chip_lpc43xx.h	2017-02-27 20:42:08.424009491 -0300
 @@ -0,0 +1,221 @@
 +/*
 + * @brief LPC43xx basic chip inclusion file
@@ -4073,9 +4077,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __CHIP_LPC43XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/clock_18xx_43xx.h ./lpc_chip_43xx/inc/clock_18xx_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/clock_18xx_43xx.h    1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/clock_18xx_43xx.h   2015-08-08 23:28:06.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/clock_18xx_43xx.h ./lpc_chip_43xx/inc/clock_18xx_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/clock_18xx_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/clock_18xx_43xx.h	2017-02-27 20:42:08.428009491 -0300
 @@ -0,0 +1,394 @@
 +/*
 + * @brief LPC18xx/43xx clock driver
@@ -4471,9 +4475,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __CLOCK_18XX_43XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/cmsis_43xx.h ./lpc_chip_43xx/inc/cmsis_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/cmsis_43xx.h 1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/cmsis_43xx.h    2015-08-08 23:28:08.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/cmsis_43xx.h ./lpc_chip_43xx/inc/cmsis_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/cmsis_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/cmsis_43xx.h	2017-02-27 20:42:08.428009491 -0300
 @@ -0,0 +1,167 @@
 +/*
 + * @brief Basic CMSIS include file for LPC43XX
@@ -4642,9 +4646,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* ifndef __CMSIS_43XX_M0_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/cmsis.h ./lpc_chip_43xx/inc/cmsis.h
---- a_HTOeHw/lpc_chip_43xx/inc/cmsis.h  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/cmsis.h 2015-08-08 23:28:08.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/cmsis.h ./lpc_chip_43xx/inc/cmsis.h
+--- a_8FkA5l/lpc_chip_43xx/inc/cmsis.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/cmsis.h	2017-02-27 20:42:08.428009491 -0300
 @@ -0,0 +1,63 @@
 +/*
 + * @brief LPC11xx selective CMSIS inclusion file
@@ -4709,9 +4713,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __CMSIS_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/core_cm4.h ./lpc_chip_43xx/inc/core_cm4.h
---- a_HTOeHw/lpc_chip_43xx/inc/core_cm4.h   1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/core_cm4.h  2015-08-08 23:28:08.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/core_cm4.h ./lpc_chip_43xx/inc/core_cm4.h
+--- a_8FkA5l/lpc_chip_43xx/inc/core_cm4.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/core_cm4.h	2017-02-27 20:42:08.432009491 -0300
 @@ -0,0 +1,1772 @@
 +/**************************************************************************//**
 + * @file     core_cm4.h
@@ -6485,9 +6489,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#ifdef __cplusplus
 +}
 +#endif
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/core_cm4_simd.h ./lpc_chip_43xx/inc/core_cm4_simd.h
---- a_HTOeHw/lpc_chip_43xx/inc/core_cm4_simd.h  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/core_cm4_simd.h 2015-08-08 23:28:04.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/core_cm4_simd.h ./lpc_chip_43xx/inc/core_cm4_simd.h
+--- a_8FkA5l/lpc_chip_43xx/inc/core_cm4_simd.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/core_cm4_simd.h	2017-02-27 20:42:08.432009491 -0300
 @@ -0,0 +1,673 @@
 +/**************************************************************************//**
 + * @file     core_cm4_simd.h
@@ -7162,9 +7166,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#ifdef __cplusplus
 +}
 +#endif
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/core_cmFunc.h ./lpc_chip_43xx/inc/core_cmFunc.h
---- a_HTOeHw/lpc_chip_43xx/inc/core_cmFunc.h    1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/core_cmFunc.h   2015-08-08 23:28:08.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/core_cmFunc.h ./lpc_chip_43xx/inc/core_cmFunc.h
+--- a_8FkA5l/lpc_chip_43xx/inc/core_cmFunc.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/core_cmFunc.h	2017-02-27 20:42:08.436009491 -0300
 @@ -0,0 +1,636 @@
 +/**************************************************************************//**
 + * @file     core_cmFunc.h
@@ -7802,9 +7806,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +
 +
 +#endif /* __CORE_CMFUNC_H */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/core_cmInstr.h ./lpc_chip_43xx/inc/core_cmInstr.h
---- a_HTOeHw/lpc_chip_43xx/inc/core_cmInstr.h   1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/core_cmInstr.h  2015-08-08 23:28:08.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/core_cmInstr.h ./lpc_chip_43xx/inc/core_cmInstr.h
+--- a_8FkA5l/lpc_chip_43xx/inc/core_cmInstr.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/core_cmInstr.h	2017-02-27 20:42:08.436009491 -0300
 @@ -0,0 +1,688 @@
 +/**************************************************************************//**
 + * @file     core_cmInstr.h
@@ -8494,9 +8498,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +/*@}*/ /* end of group CMSIS_Core_InstructionInterface */
 +
 +#endif /* __CORE_CMINSTR_H */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/creg_18xx_43xx.h ./lpc_chip_43xx/inc/creg_18xx_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/creg_18xx_43xx.h 1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/creg_18xx_43xx.h    2015-08-08 23:28:06.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/creg_18xx_43xx.h ./lpc_chip_43xx/inc/creg_18xx_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/creg_18xx_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/creg_18xx_43xx.h	2017-02-27 20:42:08.436009491 -0300
 @@ -0,0 +1,238 @@
 +/*
 + * @brief LPC18XX/43XX CREG control functions
@@ -8736,9 +8740,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __CREG_18XX_43XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/dac_18xx_43xx.h ./lpc_chip_43xx/inc/dac_18xx_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/dac_18xx_43xx.h  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/dac_18xx_43xx.h 2015-08-08 23:28:06.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/dac_18xx_43xx.h ./lpc_chip_43xx/inc/dac_18xx_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/dac_18xx_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/dac_18xx_43xx.h	2017-02-27 20:42:08.436009491 -0300
 @@ -0,0 +1,166 @@
 +/*
 + * @brief LPC18xx/43xx D/A conversion driver
@@ -8906,9 +8910,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __DAC_18XX_43XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/eeprom_18xx_43xx.h ./lpc_chip_43xx/inc/eeprom_18xx_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/eeprom_18xx_43xx.h   1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/eeprom_18xx_43xx.h  2015-08-08 23:28:08.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/eeprom_18xx_43xx.h ./lpc_chip_43xx/inc/eeprom_18xx_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/eeprom_18xx_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/eeprom_18xx_43xx.h	2017-02-27 20:42:08.436009491 -0300
 @@ -0,0 +1,275 @@
 +/*
 + * @brief LPC18xx/43xx EEPROM driver
@@ -9185,9 +9189,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* _EEPROM_18XX_43XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/emc_18xx_43xx.h ./lpc_chip_43xx/inc/emc_18xx_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/emc_18xx_43xx.h  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/emc_18xx_43xx.h 2015-08-08 23:28:08.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/emc_18xx_43xx.h ./lpc_chip_43xx/inc/emc_18xx_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/emc_18xx_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/emc_18xx_43xx.h	2017-02-27 20:42:08.436009491 -0300
 @@ -0,0 +1,354 @@
 +/*
 + * @brief LPC18xx/43xx EMC driver
@@ -9543,9 +9547,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __EMC_18XX_43XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/enet_18xx_43xx.h ./lpc_chip_43xx/inc/enet_18xx_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/enet_18xx_43xx.h 1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/enet_18xx_43xx.h    2015-08-08 23:28:08.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/enet_18xx_43xx.h ./lpc_chip_43xx/inc/enet_18xx_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/enet_18xx_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/enet_18xx_43xx.h	2017-02-27 20:42:08.440009491 -0300
 @@ -0,0 +1,680 @@
 +/*
 + * @brief LPC18xx/43xx Ethernet driver
@@ -10227,9 +10231,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __ENET_18XX_43XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/error.h ./lpc_chip_43xx/inc/error.h
---- a_HTOeHw/lpc_chip_43xx/inc/error.h  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/error.h 2015-08-08 23:28:06.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/error.h ./lpc_chip_43xx/inc/error.h
+--- a_8FkA5l/lpc_chip_43xx/inc/error.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/error.h	2017-02-27 20:42:08.440009491 -0300
 @@ -0,0 +1,272 @@
 +/*
 + * @brief Error code returned by Boot ROM drivers/library functions
@@ -10503,9 +10507,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +   case pred:; }
 +
 +#endif /* __LPC_ERROR_H__ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/evrt_18xx_43xx.h ./lpc_chip_43xx/inc/evrt_18xx_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/evrt_18xx_43xx.h 1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/evrt_18xx_43xx.h    2015-08-08 23:28:06.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/evrt_18xx_43xx.h ./lpc_chip_43xx/inc/evrt_18xx_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/evrt_18xx_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/evrt_18xx_43xx.h	2017-02-27 20:42:08.440009491 -0300
 @@ -0,0 +1,171 @@
 +/*
 + * @brief LPC18xx/43xx event router driver
@@ -10678,9 +10682,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __EVRT_18XX_43XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/fmc_18xx_43xx.h ./lpc_chip_43xx/inc/fmc_18xx_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/fmc_18xx_43xx.h  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/fmc_18xx_43xx.h 2015-08-08 23:28:06.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/fmc_18xx_43xx.h ./lpc_chip_43xx/inc/fmc_18xx_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/fmc_18xx_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/fmc_18xx_43xx.h	2017-02-27 20:42:08.440009491 -0300
 @@ -0,0 +1,139 @@
 +/*
 + * @brief LPC18xx/43xx FLASH Memory Controller (FMC) driver
@@ -10821,9 +10825,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __FMC_18XX_43XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/fpu_init.h ./lpc_chip_43xx/inc/fpu_init.h
---- a_HTOeHw/lpc_chip_43xx/inc/fpu_init.h   1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/fpu_init.h  2015-08-08 23:28:06.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/fpu_init.h ./lpc_chip_43xx/inc/fpu_init.h
+--- a_8FkA5l/lpc_chip_43xx/inc/fpu_init.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/fpu_init.h	2017-02-27 20:42:08.440009491 -0300
 @@ -0,0 +1,52 @@
 +/*
 + * @brief FPU init code
@@ -10877,9 +10881,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 + */
 +
 +#endif /* __FPU_INIT_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/gima_18xx_43xx.h ./lpc_chip_43xx/inc/gima_18xx_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/gima_18xx_43xx.h 1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/gima_18xx_43xx.h    2015-08-08 23:28:06.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/gima_18xx_43xx.h ./lpc_chip_43xx/inc/gima_18xx_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/gima_18xx_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/gima_18xx_43xx.h	2017-02-27 20:42:08.440009491 -0300
 @@ -0,0 +1,66 @@
 +/*
 + * @brief LPC18xx/43xx GIMA driver
@@ -10947,9 +10951,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __GIMA_18XX_43XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/gpdma_18xx_43xx.h ./lpc_chip_43xx/inc/gpdma_18xx_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/gpdma_18xx_43xx.h    1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/gpdma_18xx_43xx.h   2015-08-08 23:28:08.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/gpdma_18xx_43xx.h ./lpc_chip_43xx/inc/gpdma_18xx_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/gpdma_18xx_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/gpdma_18xx_43xx.h	2017-02-27 20:42:08.444009491 -0300
 @@ -0,0 +1,418 @@
 +/*
 + * @brief LPC18xx/43xx General Purpose DMA driver
@@ -11369,9 +11373,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __GPDMA_18XX_43XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/gpio_18xx_43xx.h ./lpc_chip_43xx/inc/gpio_18xx_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/gpio_18xx_43xx.h 1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/gpio_18xx_43xx.h    2015-08-08 23:28:06.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/gpio_18xx_43xx.h ./lpc_chip_43xx/inc/gpio_18xx_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/gpio_18xx_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/gpio_18xx_43xx.h	2017-02-27 20:42:08.444009491 -0300
 @@ -0,0 +1,471 @@
 +/*
 + * @brief LPC18xx/43xx GPIO driver
@@ -11844,9 +11848,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __GPIO_18XX_43XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/gpiogroup_18xx_43xx.h ./lpc_chip_43xx/inc/gpiogroup_18xx_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/gpiogroup_18xx_43xx.h    1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/gpiogroup_18xx_43xx.h   2015-08-08 23:28:06.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/gpiogroup_18xx_43xx.h ./lpc_chip_43xx/inc/gpiogroup_18xx_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/gpiogroup_18xx_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/gpiogroup_18xx_43xx.h	2017-02-27 20:42:08.444009491 -0300
 @@ -0,0 +1,205 @@
 +/*
 + * @brief LPC18xx/43xx GPIO group driver
@@ -12053,9 +12057,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __GPIOGROUP_18XX_43XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/hsadc_18xx_43xx.h ./lpc_chip_43xx/inc/hsadc_18xx_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/hsadc_18xx_43xx.h    1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/hsadc_18xx_43xx.h   2015-08-08 23:28:08.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/hsadc_18xx_43xx.h ./lpc_chip_43xx/inc/hsadc_18xx_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/hsadc_18xx_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/hsadc_18xx_43xx.h	2017-02-27 20:42:08.444009491 -0300
 @@ -0,0 +1,575 @@
 +/*
 + * @brief  LPC18xx/43xx High speed ADC driver
@@ -12632,9 +12636,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __HSADC_18XX_43XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/i2c_18xx_43xx.h ./lpc_chip_43xx/inc/i2c_18xx_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/i2c_18xx_43xx.h  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/i2c_18xx_43xx.h 2015-08-08 23:28:06.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/i2c_18xx_43xx.h ./lpc_chip_43xx/inc/i2c_18xx_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/i2c_18xx_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/i2c_18xx_43xx.h	2017-02-27 20:42:08.444009491 -0300
 @@ -0,0 +1,400 @@
 +/*
 + * @brief LPC18xx/43xx I2C driver
@@ -13036,9 +13040,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __I2C_18XX_43XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/i2c_common_18xx_43xx.h ./lpc_chip_43xx/inc/i2c_common_18xx_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/i2c_common_18xx_43xx.h   1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/i2c_common_18xx_43xx.h  2015-08-08 23:28:08.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/i2c_common_18xx_43xx.h ./lpc_chip_43xx/inc/i2c_common_18xx_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/i2c_common_18xx_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/i2c_common_18xx_43xx.h	2017-02-27 20:42:08.444009491 -0300
 @@ -0,0 +1,200 @@
 +/*
 + * @brief LPC18xx_43xx I2C driver
@@ -13240,9 +13244,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __I2C_COMMON_18XX_43XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/i2cm_18xx_43xx.h ./lpc_chip_43xx/inc/i2cm_18xx_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/i2cm_18xx_43xx.h 1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/i2cm_18xx_43xx.h    2015-08-08 23:28:04.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/i2cm_18xx_43xx.h ./lpc_chip_43xx/inc/i2cm_18xx_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/i2cm_18xx_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/i2cm_18xx_43xx.h	2017-02-27 20:42:08.448009492 -0300
 @@ -0,0 +1,419 @@
 +/*
 + * @brief LPC18xx/43xx I2C driver
@@ -13663,9 +13667,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __I2C_18XX_43XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/i2s_18xx_43xx.h ./lpc_chip_43xx/inc/i2s_18xx_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/i2s_18xx_43xx.h  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/i2s_18xx_43xx.h 2015-08-08 23:28:06.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/i2s_18xx_43xx.h ./lpc_chip_43xx/inc/i2s_18xx_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/i2s_18xx_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/i2s_18xx_43xx.h	2017-02-27 20:42:08.448009492 -0300
 @@ -0,0 +1,560 @@
 +/*
 + * @brief LPC18xx/43xx I2S driver
@@ -14227,9 +14231,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __I2S_18XX_43XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/iap_18xx_43xx.h ./lpc_chip_43xx/inc/iap_18xx_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/iap_18xx_43xx.h  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/iap_18xx_43xx.h 2015-08-08 23:28:08.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/iap_18xx_43xx.h ./lpc_chip_43xx/inc/iap_18xx_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/iap_18xx_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/iap_18xx_43xx.h	2017-02-27 20:42:08.448009492 -0300
 @@ -0,0 +1,197 @@
 +/*
 + * @brief Common IAP support functions
@@ -14428,9 +14432,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __IAP_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/iap.h ./lpc_chip_43xx/inc/iap.h
---- a_HTOeHw/lpc_chip_43xx/inc/iap.h    1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/iap.h   2015-08-08 23:28:06.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/iap.h ./lpc_chip_43xx/inc/iap.h
+--- a_8FkA5l/lpc_chip_43xx/inc/iap.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/iap.h	2017-02-27 20:42:08.448009492 -0300
 @@ -0,0 +1,184 @@
 +/*
 + * @brief Common IAP support functions
@@ -14616,9 +14620,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __IAP_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/lcd_18xx_43xx.h ./lpc_chip_43xx/inc/lcd_18xx_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/lcd_18xx_43xx.h  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/lcd_18xx_43xx.h 2015-08-08 23:28:08.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/lcd_18xx_43xx.h ./lpc_chip_43xx/inc/lcd_18xx_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/lcd_18xx_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/lcd_18xx_43xx.h	2017-02-27 20:42:08.448009492 -0300
 @@ -0,0 +1,383 @@
 +/*
 + * @brief LPC18xx/43xx LCD chip driver
@@ -15003,9 +15007,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 + */
 +
 +#endif /* __LCD_18XX_43XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/lpc_types.h ./lpc_chip_43xx/inc/lpc_types.h
---- a_HTOeHw/lpc_chip_43xx/inc/lpc_types.h  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/lpc_types.h 2015-08-08 23:28:08.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/lpc_types.h ./lpc_chip_43xx/inc/lpc_types.h
+--- a_8FkA5l/lpc_chip_43xx/inc/lpc_types.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/lpc_types.h	2017-02-27 20:42:08.448009492 -0300
 @@ -0,0 +1,216 @@
 +/*
 + * @brief Common types used in LPC functions
@@ -15223,9 +15227,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 + */
 +
 +#endif /* __LPC_TYPES_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/mcpwm_18xx_43xx.h ./lpc_chip_43xx/inc/mcpwm_18xx_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/mcpwm_18xx_43xx.h    1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/mcpwm_18xx_43xx.h   2015-08-08 23:28:04.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/mcpwm_18xx_43xx.h ./lpc_chip_43xx/inc/mcpwm_18xx_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/mcpwm_18xx_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/mcpwm_18xx_43xx.h	2017-02-27 20:42:08.448009492 -0300
 @@ -0,0 +1,80 @@
 +/*
 + * @brief LPC18xx/43xx Motor Control PWM driver
@@ -15307,9 +15311,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __MCPWM_18XX_43XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/otp_18xx_43xx.h ./lpc_chip_43xx/inc/otp_18xx_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/otp_18xx_43xx.h  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/otp_18xx_43xx.h 2015-08-08 23:28:06.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/otp_18xx_43xx.h ./lpc_chip_43xx/inc/otp_18xx_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/otp_18xx_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/otp_18xx_43xx.h	2017-02-27 20:42:08.452009492 -0300
 @@ -0,0 +1,144 @@
 +/*
 + * @brief LPC18xx/43xx OTP Controller driver
@@ -15455,9 +15459,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __OTP_18XX_43XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/pinint_18xx_43xx.h ./lpc_chip_43xx/inc/pinint_18xx_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/pinint_18xx_43xx.h   1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/pinint_18xx_43xx.h  2015-08-08 23:28:08.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/pinint_18xx_43xx.h ./lpc_chip_43xx/inc/pinint_18xx_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/pinint_18xx_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/pinint_18xx_43xx.h	2017-02-27 20:42:08.452009492 -0300
 @@ -0,0 +1,252 @@
 +/*
 + * @brief LPC18xx/43xx Pin Interrupt and Pattern Match Registers and driver
@@ -15711,9 +15715,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __PININT_18XX_43XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/pmc_18xx_43xx.h ./lpc_chip_43xx/inc/pmc_18xx_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/pmc_18xx_43xx.h  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/pmc_18xx_43xx.h 2015-08-08 23:28:08.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/pmc_18xx_43xx.h ./lpc_chip_43xx/inc/pmc_18xx_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/pmc_18xx_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/pmc_18xx_43xx.h	2017-02-27 20:42:08.452009492 -0300
 @@ -0,0 +1,99 @@
 +/*
 + * @brief LPC18xx/43xx Power Management Controller driver
@@ -15814,9 +15818,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __PMC_18XX_43XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/qei_18xx_43xx.h ./lpc_chip_43xx/inc/qei_18xx_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/qei_18xx_43xx.h  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/qei_18xx_43xx.h 2015-08-08 23:28:06.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/qei_18xx_43xx.h ./lpc_chip_43xx/inc/qei_18xx_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/qei_18xx_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/qei_18xx_43xx.h	2017-02-27 20:42:08.452009492 -0300
 @@ -0,0 +1,86 @@
 +/*
 + * @brief LPC18xx/43xx Quadrature Encoder Interface driver
@@ -15904,9 +15908,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __QEI_18XX_43XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/rgu_18xx_43xx.h ./lpc_chip_43xx/inc/rgu_18xx_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/rgu_18xx_43xx.h  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/rgu_18xx_43xx.h 2015-08-08 23:28:04.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/rgu_18xx_43xx.h ./lpc_chip_43xx/inc/rgu_18xx_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/rgu_18xx_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/rgu_18xx_43xx.h	2017-02-27 20:42:08.452009492 -0300
 @@ -0,0 +1,158 @@
 +/*
 + * @brief LPC18xx/43xx Reset Generator Unit driver
@@ -16066,9 +16070,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __RGU_18XX_43XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/ring_buffer.h ./lpc_chip_43xx/inc/ring_buffer.h
---- a_HTOeHw/lpc_chip_43xx/inc/ring_buffer.h    1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/ring_buffer.h   2015-08-08 23:28:06.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/ring_buffer.h ./lpc_chip_43xx/inc/ring_buffer.h
+--- a_8FkA5l/lpc_chip_43xx/inc/ring_buffer.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/ring_buffer.h	2017-02-27 20:42:08.452009492 -0300
 @@ -0,0 +1,188 @@
 +/*
 + * @brief Common ring buffer support functions
@@ -16258,9 +16262,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 + */
 +
 +#endif /* __RING_BUFFER_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/ritimer_18xx_43xx.h ./lpc_chip_43xx/inc/ritimer_18xx_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/ritimer_18xx_43xx.h  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/ritimer_18xx_43xx.h 2015-08-08 23:28:04.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/ritimer_18xx_43xx.h ./lpc_chip_43xx/inc/ritimer_18xx_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/ritimer_18xx_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/ritimer_18xx_43xx.h	2017-02-27 20:42:08.452009492 -0300
 @@ -0,0 +1,189 @@
 +/*
 + * @brief LPC18xx/43xx RITimer driver
@@ -16451,9 +16455,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __RITIMER_18XX_43XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/romapi_18xx_43xx.h ./lpc_chip_43xx/inc/romapi_18xx_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/romapi_18xx_43xx.h   1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/romapi_18xx_43xx.h  2015-08-08 23:28:08.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/romapi_18xx_43xx.h ./lpc_chip_43xx/inc/romapi_18xx_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/romapi_18xx_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/romapi_18xx_43xx.h	2017-02-27 20:42:08.452009492 -0300
 @@ -0,0 +1,128 @@
 +/*
 + * @brief LPC18xx_43xx ROM API declarations and functions
@@ -16583,9 +16587,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __ROMAPI_18XX_43XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/rtc_18xx_43xx.h ./lpc_chip_43xx/inc/rtc_18xx_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/rtc_18xx_43xx.h  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/rtc_18xx_43xx.h 2015-08-08 23:28:06.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/rtc_18xx_43xx.h ./lpc_chip_43xx/inc/rtc_18xx_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/rtc_18xx_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/rtc_18xx_43xx.h	2017-02-27 20:42:08.452009492 -0300
 @@ -0,0 +1,638 @@
 +/*
 + * @brief LPC18xx/43xx RTC driver
@@ -17225,9 +17229,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __RTC_18XX_43XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/sct_18xx_43xx.h ./lpc_chip_43xx/inc/sct_18xx_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/sct_18xx_43xx.h  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/sct_18xx_43xx.h 2015-08-08 23:28:06.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/sct_18xx_43xx.h ./lpc_chip_43xx/inc/sct_18xx_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/sct_18xx_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/sct_18xx_43xx.h	2017-02-27 20:42:08.456009492 -0300
 @@ -0,0 +1,423 @@
 +/*
 + * @brief LPC18xx/43xx State Configurable Timer (SCT) driver
@@ -17652,9 +17656,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __SCT_18XX_43XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/sct_pwm_18xx_43xx.h ./lpc_chip_43xx/inc/sct_pwm_18xx_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/sct_pwm_18xx_43xx.h  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/sct_pwm_18xx_43xx.h 2015-08-08 23:28:08.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/sct_pwm_18xx_43xx.h ./lpc_chip_43xx/inc/sct_pwm_18xx_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/sct_pwm_18xx_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/sct_pwm_18xx_43xx.h	2017-02-27 20:42:08.456009492 -0300
 @@ -0,0 +1,178 @@
 +/*
 + * @brief LPC18xx_43xx State Configurable Timer (SCT/PWM) Chip driver
@@ -17834,9 +17838,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __SCT_PWM_18XX_43XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/scu_18xx_43xx.h ./lpc_chip_43xx/inc/scu_18xx_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/scu_18xx_43xx.h  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/scu_18xx_43xx.h 2015-08-08 23:28:06.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/scu_18xx_43xx.h ./lpc_chip_43xx/inc/scu_18xx_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/scu_18xx_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/scu_18xx_43xx.h	2017-02-27 20:42:08.456009492 -0300
 @@ -0,0 +1,247 @@
 +/*
 + * Copyright(C) NXP Semiconductors, 2012
@@ -18085,9 +18089,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __SCU_18XX_43XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/sdif_18xx_43xx.h ./lpc_chip_43xx/inc/sdif_18xx_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/sdif_18xx_43xx.h 1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/sdif_18xx_43xx.h    2015-08-08 23:28:08.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/sdif_18xx_43xx.h ./lpc_chip_43xx/inc/sdif_18xx_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/sdif_18xx_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/sdif_18xx_43xx.h	2017-02-27 20:42:08.456009492 -0300
 @@ -0,0 +1,479 @@
 +/*
 + * @brief LPC18xx/43xx SD/SDIO driver
@@ -18568,9 +18572,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __SDIF_18XX_43XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/sdio_18xx_43xx.h ./lpc_chip_43xx/inc/sdio_18xx_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/sdio_18xx_43xx.h 1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/sdio_18xx_43xx.h    2015-08-08 23:28:08.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/sdio_18xx_43xx.h ./lpc_chip_43xx/inc/sdio_18xx_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/sdio_18xx_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/sdio_18xx_43xx.h	2017-02-27 20:42:08.456009492 -0300
 @@ -0,0 +1,278 @@
 +/*
 + * @brief LPC18xx/43xx SD/MMC card driver
@@ -18850,9 +18854,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __SDIO_18XX_43XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/sdmmc_18xx_43xx.h ./lpc_chip_43xx/inc/sdmmc_18xx_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/sdmmc_18xx_43xx.h    1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/sdmmc_18xx_43xx.h   2015-08-08 23:28:08.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/sdmmc_18xx_43xx.h ./lpc_chip_43xx/inc/sdmmc_18xx_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/sdmmc_18xx_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/sdmmc_18xx_43xx.h	2017-02-27 20:42:08.456009492 -0300
 @@ -0,0 +1,151 @@
 +/*
 + * @brief LPC18xx/43xx SD/MMC card driver
@@ -19005,9 +19009,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __SDMMC_18XX_43XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/sdmmc.h ./lpc_chip_43xx/inc/sdmmc.h
---- a_HTOeHw/lpc_chip_43xx/inc/sdmmc.h  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/sdmmc.h 2015-08-08 23:28:08.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/sdmmc.h ./lpc_chip_43xx/inc/sdmmc.h
+--- a_8FkA5l/lpc_chip_43xx/inc/sdmmc.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/sdmmc.h	2017-02-27 20:42:08.460009492 -0300
 @@ -0,0 +1,450 @@
 +/*
 + * @brief    Common definitions used in SD/MMC cards
@@ -19459,9 +19463,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 + */
 +
 +#endif /* __SDMMC_H */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/sgpio_18xx_43xx.h ./lpc_chip_43xx/inc/sgpio_18xx_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/sgpio_18xx_43xx.h    1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/sgpio_18xx_43xx.h   2015-08-08 23:28:08.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/sgpio_18xx_43xx.h ./lpc_chip_43xx/inc/sgpio_18xx_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/sgpio_18xx_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/sgpio_18xx_43xx.h	2017-02-27 20:42:08.460009492 -0300
 @@ -0,0 +1,108 @@
 +/*
 + * @brief LPC43xx Serial GPIO driver
@@ -19571,9 +19575,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __SGPIO_43XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/spi_18xx_43xx.h ./lpc_chip_43xx/inc/spi_18xx_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/spi_18xx_43xx.h  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/spi_18xx_43xx.h 2015-08-08 23:28:06.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/spi_18xx_43xx.h ./lpc_chip_43xx/inc/spi_18xx_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/spi_18xx_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/spi_18xx_43xx.h	2017-02-27 20:42:08.460009492 -0300
 @@ -0,0 +1,416 @@
 +/*
 + * @brief LPC43xx SPI driver
@@ -19991,9 +19995,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __SPI_43XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/ssp_18xx_43xx.h ./lpc_chip_43xx/inc/ssp_18xx_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/ssp_18xx_43xx.h  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/ssp_18xx_43xx.h 2015-08-08 23:28:04.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/ssp_18xx_43xx.h ./lpc_chip_43xx/inc/ssp_18xx_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/ssp_18xx_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/ssp_18xx_43xx.h	2017-02-27 20:42:08.460009492 -0300
 @@ -0,0 +1,598 @@
 +/*
 + * @brief LPC18xx/43xx SSP driver
@@ -20593,9 +20597,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __SSP_18XX_43XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/stopwatch.h ./lpc_chip_43xx/inc/stopwatch.h
---- a_HTOeHw/lpc_chip_43xx/inc/stopwatch.h  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/stopwatch.h 2015-08-08 23:28:06.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/stopwatch.h ./lpc_chip_43xx/inc/stopwatch.h
+--- a_8FkA5l/lpc_chip_43xx/inc/stopwatch.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/stopwatch.h	2017-02-27 20:42:08.460009492 -0300
 @@ -0,0 +1,137 @@
 +/*
 + * @brief Common stopwatch support
@@ -20734,9 +20738,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 + */
 +
 +#endif /* __STOPWATCH_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/sys_config.h ./lpc_chip_43xx/inc/sys_config.h
---- a_HTOeHw/lpc_chip_43xx/inc/sys_config.h 1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/sys_config.h    2015-08-08 23:28:04.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/sys_config.h ./lpc_chip_43xx/inc/sys_config.h
+--- a_8FkA5l/lpc_chip_43xx/inc/sys_config.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/sys_config.h	2017-02-27 20:42:08.460009492 -0300
 @@ -0,0 +1,36 @@
 +/*
 + * @note
@@ -20774,9 +20778,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#define CHIP_LPC43XX
 +
 +#endif /* __SYS_CONFIG_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/timer_18xx_43xx.h ./lpc_chip_43xx/inc/timer_18xx_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/timer_18xx_43xx.h    1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/timer_18xx_43xx.h   2015-08-08 23:28:06.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/timer_18xx_43xx.h ./lpc_chip_43xx/inc/timer_18xx_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/timer_18xx_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/timer_18xx_43xx.h	2017-02-27 20:42:08.460009492 -0300
 @@ -0,0 +1,445 @@
 +/*
 + * @brief LPC18xx/43xx 16/32-bit Timer/PWM driver
@@ -21223,9 +21227,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __TIMER_18XX_43XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/uart_18xx_43xx.h ./lpc_chip_43xx/inc/uart_18xx_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/uart_18xx_43xx.h 1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/uart_18xx_43xx.h    2015-08-08 23:28:06.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/uart_18xx_43xx.h ./lpc_chip_43xx/inc/uart_18xx_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/uart_18xx_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/uart_18xx_43xx.h	2017-02-27 20:42:08.464009492 -0300
 @@ -0,0 +1,826 @@
 +/*
 + * @brief LPC18xx/43xx UART chip driver
@@ -22053,9 +22057,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __UART_18XX_43XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/usbd/usbd_adc.h ./lpc_chip_43xx/inc/usbd/usbd_adc.h
---- a_HTOeHw/lpc_chip_43xx/inc/usbd/usbd_adc.h  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/usbd/usbd_adc.h 2015-08-08 23:28:10.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/usbd/usbd_adc.h ./lpc_chip_43xx/inc/usbd/usbd_adc.h
+--- a_8FkA5l/lpc_chip_43xx/inc/usbd/usbd_adc.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/usbd/usbd_adc.h	2017-02-27 20:42:08.464009492 -0300
 @@ -0,0 +1,377 @@
 +/***********************************************************************
 +* $Id:: mw_usbd_audio.h 165 2011-04-14 17:41:11Z usb10131                     $
@@ -22434,9 +22438,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +
 +
 +#endif  /* __AUDIO_H__ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/usbd/usbd_cdc.h ./lpc_chip_43xx/inc/usbd/usbd_cdc.h
---- a_HTOeHw/lpc_chip_43xx/inc/usbd/usbd_cdc.h  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/usbd/usbd_cdc.h 2015-08-08 23:28:10.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/usbd/usbd_cdc.h ./lpc_chip_43xx/inc/usbd/usbd_cdc.h
+--- a_8FkA5l/lpc_chip_43xx/inc/usbd/usbd_cdc.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/usbd/usbd_cdc.h	2017-02-27 20:42:08.464009492 -0300
 @@ -0,0 +1,249 @@
 +/***********************************************************************
 +* $Id:: mw_usbd_cdc.h 165 2011-04-14 17:41:11Z usb10131                       $
@@ -22687,9 +22691,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +
 +#endif /* __CDC_H */
 +
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/usbd/usbd_cdcuser.h ./lpc_chip_43xx/inc/usbd/usbd_cdcuser.h
---- a_HTOeHw/lpc_chip_43xx/inc/usbd/usbd_cdcuser.h  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/usbd/usbd_cdcuser.h 2015-08-08 23:28:10.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/usbd/usbd_cdcuser.h ./lpc_chip_43xx/inc/usbd/usbd_cdcuser.h
+--- a_8FkA5l/lpc_chip_43xx/inc/usbd/usbd_cdcuser.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/usbd/usbd_cdcuser.h	2017-02-27 20:42:08.464009492 -0300
 @@ -0,0 +1,529 @@
 +/***********************************************************************
 +* $Id:: mw_usbd_cdcuser.h 331 2012-08-09 18:54:34Z usb10131                   $
@@ -23220,9 +23224,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +
 +
 +#endif  /* __CDCUSER_H__ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/usbd/usbd_core.h ./lpc_chip_43xx/inc/usbd/usbd_core.h
---- a_HTOeHw/lpc_chip_43xx/inc/usbd/usbd_core.h 1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/usbd/usbd_core.h    2015-08-08 23:28:10.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/usbd/usbd_core.h ./lpc_chip_43xx/inc/usbd/usbd_core.h
+--- a_8FkA5l/lpc_chip_43xx/inc/usbd/usbd_core.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/usbd/usbd_core.h	2017-02-27 20:42:08.464009492 -0300
 @@ -0,0 +1,585 @@
 +/***********************************************************************
 +* $Id:: mw_usbd_core.h 331 2012-08-09 18:54:34Z usb10131                      $
@@ -23809,9 +23813,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +/** @endcond */
 +
 +#endif  /* __MW_USBD_CORE_H__ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/usbd/usbd_desc.h ./lpc_chip_43xx/inc/usbd/usbd_desc.h
---- a_HTOeHw/lpc_chip_43xx/inc/usbd/usbd_desc.h 1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/usbd/usbd_desc.h    2015-08-08 23:28:10.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/usbd/usbd_desc.h ./lpc_chip_43xx/inc/usbd/usbd_desc.h
+--- a_8FkA5l/lpc_chip_43xx/inc/usbd/usbd_desc.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/usbd/usbd_desc.h	2017-02-27 20:42:08.464009492 -0300
 @@ -0,0 +1,48 @@
 +/***********************************************************************
 +* $Id:: mw_usbd_desc.h 165 2011-04-14 17:41:11Z usb10131                      $
@@ -23861,9 +23865,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +
 +
 +#endif  /* __USBDESC_H__ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/usbd/usbd_dfu.h ./lpc_chip_43xx/inc/usbd/usbd_dfu.h
---- a_HTOeHw/lpc_chip_43xx/inc/usbd/usbd_dfu.h  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/usbd/usbd_dfu.h 2015-08-08 23:28:10.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/usbd/usbd_dfu.h ./lpc_chip_43xx/inc/usbd/usbd_dfu.h
+--- a_8FkA5l/lpc_chip_43xx/inc/usbd/usbd_dfu.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/usbd/usbd_dfu.h	2017-02-27 20:42:08.468009492 -0300
 @@ -0,0 +1,120 @@
 +/***********************************************************************
 +* $Id:: mw_usbd_dfu.h 331 2012-08-09 18:54:34Z usb10131                       $
@@ -23985,9 +23989,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +
 +
 +#endif  /* __MW_USBD_DFU_H__ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/usbd/usbd_dfuuser.h ./lpc_chip_43xx/inc/usbd/usbd_dfuuser.h
---- a_HTOeHw/lpc_chip_43xx/inc/usbd/usbd_dfuuser.h  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/usbd/usbd_dfuuser.h 2015-08-08 23:28:10.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/usbd/usbd_dfuuser.h ./lpc_chip_43xx/inc/usbd/usbd_dfuuser.h
+--- a_8FkA5l/lpc_chip_43xx/inc/usbd/usbd_dfuuser.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/usbd/usbd_dfuuser.h	2017-02-27 20:42:08.468009492 -0300
 @@ -0,0 +1,270 @@
 +/***********************************************************************
 +* $Id:: mw_usbd_dfuuser.h 331 2012-08-09 18:54:34Z usb10131                   $
@@ -24259,9 +24263,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +/** @endcond */
 +
 +#endif  /* __DFUUSER_H__ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/usbd/usbd.h ./lpc_chip_43xx/inc/usbd/usbd.h
---- a_HTOeHw/lpc_chip_43xx/inc/usbd/usbd.h  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/usbd/usbd.h 2015-08-08 23:28:10.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/usbd/usbd.h ./lpc_chip_43xx/inc/usbd/usbd.h
+--- a_8FkA5l/lpc_chip_43xx/inc/usbd/usbd.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/usbd/usbd.h	2017-02-27 20:42:08.468009492 -0300
 @@ -0,0 +1,705 @@
 +/***********************************************************************
 +* $Id:: mw_usbd.h 575 2012-11-20 01:35:56Z usb10131                           $
@@ -24674,7 +24678,7 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +  uint16_t bcdDevice; /**< Device release number in binary-coded decimal. */
 +  uint8_t  iManufacturer; /**< Index of string descriptor describing manufacturer. */
 +  uint8_t  iProduct; /**< Index of string descriptor describing product. */
-+  uint8_t  iSerialNumber; /**< Index of string descriptor describing the device’s
++  uint8_t  iSerialNumber; /**< Index of string descriptor describing the deviceï¿½s
 +                          serial number.
 +                          */
 +  uint8_t  bNumConfigurations; /**< Number of possible configurations. */
@@ -24753,7 +24757,7 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +                      no longer support. The USB System Software
 +                      may determine the cause of the failure by
 +                      checking the status and noting the loss of the
-+                      device’s power source.*/
++                      deviceï¿½s power source.*/
 +} ;
 +/** USB Standard Configuration Descriptor */
 +typedef struct _USB_CONFIGURATION_DESCRIPTOR USB_CONFIGURATION_DESCRIPTOR;
@@ -24845,7 +24849,7 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +                            Bit 7: Direction, ignored for control endpoints
 +                            0 = OUT endpoint
 +                            1 = IN endpoint.  \n \sa USBD_ENDPOINT_ADR_Type*/
-+  uint8_t  bmAttributes; /**< This field describes the endpoint’s attributes when it is
++  uint8_t  bmAttributes; /**< This field describes the endpointï¿½s attributes when it is
 +                          configured using the bConfigurationValue. \n
 +                          Bits 1..0: Transfer Type
 +                          \li 00 = Control
@@ -24892,7 +24896,7 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +  uint8_t  bInterval; /**< Interval for polling endpoint for data transfers.
 +                      Expressed in frames or microframes depending on the
 +                      device operating speed (i.e., either 1 millisecond or
-+                      125 µs units).
++                      125 ï¿½s units).
 +                      \li For full-/high-speed isochronous endpoints, this value
 +                      must be in the range from 1 to 16. The bInterval value
 +                      is used as the exponent for a \f$ 2^(bInterval-1) \f$ value; e.g., a
@@ -24968,9 +24972,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +/** @}*/
 +
 +#endif  /* __USBD_H__ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/usbd/usbd_hid.h ./lpc_chip_43xx/inc/usbd/usbd_hid.h
---- a_HTOeHw/lpc_chip_43xx/inc/usbd/usbd_hid.h  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/usbd/usbd_hid.h 2015-08-08 23:28:10.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/usbd/usbd_hid.h ./lpc_chip_43xx/inc/usbd/usbd_hid.h
+--- a_8FkA5l/lpc_chip_43xx/inc/usbd/usbd_hid.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/usbd/usbd_hid.h	2017-02-27 20:42:08.468009492 -0300
 @@ -0,0 +1,431 @@
 +/***********************************************************************
 +* $Id: mw_usbd_hid.h.rca 1.2 Tue Nov  1 11:45:07 2011 nlv09221 Experimental $
@@ -25403,9 +25407,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +/** @} */
 +
 +#endif  /* __HID_H__ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/usbd/usbd_hiduser.h ./lpc_chip_43xx/inc/usbd/usbd_hiduser.h
---- a_HTOeHw/lpc_chip_43xx/inc/usbd/usbd_hiduser.h  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/usbd/usbd_hiduser.h 2015-08-08 23:28:10.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/usbd/usbd_hiduser.h ./lpc_chip_43xx/inc/usbd/usbd_hiduser.h
+--- a_8FkA5l/lpc_chip_43xx/inc/usbd/usbd_hiduser.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/usbd/usbd_hiduser.h	2017-02-27 20:42:08.468009492 -0300
 @@ -0,0 +1,421 @@
 +/***********************************************************************
 +* $Id:: mw_usbd_hiduser.h 331 2012-08-09 18:54:34Z usb10131                   $
@@ -25828,9 +25832,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +/** @endcond */
 +
 +#endif  /* __HIDUSER_H__ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/usbd/usbd_hw.h ./lpc_chip_43xx/inc/usbd/usbd_hw.h
---- a_HTOeHw/lpc_chip_43xx/inc/usbd/usbd_hw.h   1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/usbd/usbd_hw.h  2015-08-08 23:28:10.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/usbd/usbd_hw.h ./lpc_chip_43xx/inc/usbd/usbd_hw.h
+--- a_8FkA5l/lpc_chip_43xx/inc/usbd/usbd_hw.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/usbd/usbd_hw.h	2017-02-27 20:42:08.468009492 -0300
 @@ -0,0 +1,457 @@
 +/***********************************************************************
 +* $Id:: mw_usbd_hw.h 331 2012-08-09 18:54:34Z usb10131                        $
@@ -26289,9 +26293,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +
 +
 +#endif  /* __USBHW_H__ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/usbd/usbd_msc.h ./lpc_chip_43xx/inc/usbd/usbd_msc.h
---- a_HTOeHw/lpc_chip_43xx/inc/usbd/usbd_msc.h  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/usbd/usbd_msc.h 2015-08-08 23:28:10.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/usbd/usbd_msc.h ./lpc_chip_43xx/inc/usbd/usbd_msc.h
+--- a_8FkA5l/lpc_chip_43xx/inc/usbd/usbd_msc.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/usbd/usbd_msc.h	2017-02-27 20:42:08.472009492 -0300
 @@ -0,0 +1,119 @@
 +/***********************************************************************
 +* $Id:: mw_usbd_msc.h 331 2012-08-09 18:54:34Z usb10131                       $
@@ -26412,9 +26416,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +
 +
 +#endif  /* __MSC_H__ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/usbd/usbd_mscuser.h ./lpc_chip_43xx/inc/usbd/usbd_mscuser.h
---- a_HTOeHw/lpc_chip_43xx/inc/usbd/usbd_mscuser.h  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/usbd/usbd_mscuser.h 2015-08-08 23:28:10.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/usbd/usbd_mscuser.h ./lpc_chip_43xx/inc/usbd/usbd_mscuser.h
+--- a_8FkA5l/lpc_chip_43xx/inc/usbd/usbd_mscuser.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/usbd/usbd_mscuser.h	2017-02-27 20:42:08.472009492 -0300
 @@ -0,0 +1,270 @@
 +/***********************************************************************
 +* $Id:: mw_usbd_mscuser.h 577 2012-11-20 01:42:04Z usb10131                   $
@@ -26686,9 +26690,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +
 +
 +#endif  /* __MSCUSER_H__ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/usbd/usbd_rom_api.h ./lpc_chip_43xx/inc/usbd/usbd_rom_api.h
---- a_HTOeHw/lpc_chip_43xx/inc/usbd/usbd_rom_api.h  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/usbd/usbd_rom_api.h 2015-08-08 23:28:10.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/usbd/usbd_rom_api.h ./lpc_chip_43xx/inc/usbd/usbd_rom_api.h
+--- a_8FkA5l/lpc_chip_43xx/inc/usbd/usbd_rom_api.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/usbd/usbd_rom_api.h	2017-02-27 20:42:08.472009492 -0300
 @@ -0,0 +1,92 @@
 +/***********************************************************************
 +* $Id:: mw_usbd_rom_api.h 331 2012-08-09 18:54:34Z usb10131                   $
@@ -26782,9 +26786,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +
 +#endif /*__MW_USBD_ROM_API_H*/
 +
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/usbhs_18xx_43xx.h ./lpc_chip_43xx/inc/usbhs_18xx_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/usbhs_18xx_43xx.h    1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/usbhs_18xx_43xx.h   2015-08-08 23:28:08.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/usbhs_18xx_43xx.h ./lpc_chip_43xx/inc/usbhs_18xx_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/usbhs_18xx_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/usbhs_18xx_43xx.h	2017-02-27 20:42:08.472009492 -0300
 @@ -0,0 +1,123 @@
 +/*
 + * @brief LPC18xx/43xx High-Speed USB driver
@@ -26909,9 +26913,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __USBHS_18XX_43XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/inc/wwdt_18xx_43xx.h ./lpc_chip_43xx/inc/wwdt_18xx_43xx.h
---- a_HTOeHw/lpc_chip_43xx/inc/wwdt_18xx_43xx.h 1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/inc/wwdt_18xx_43xx.h    2015-08-08 23:28:08.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/inc/wwdt_18xx_43xx.h ./lpc_chip_43xx/inc/wwdt_18xx_43xx.h
+--- a_8FkA5l/lpc_chip_43xx/inc/wwdt_18xx_43xx.h	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/inc/wwdt_18xx_43xx.h	2017-02-27 20:42:08.472009492 -0300
 @@ -0,0 +1,227 @@
 +/*
 + * @brief LPC18xx/43xx WWDT driver
@@ -27140,9 +27144,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +#endif
 +
 +#endif /* __WWDT_18XX_43XX_H_ */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/src/adc_18xx_43xx.c ./lpc_chip_43xx/src/adc_18xx_43xx.c
---- a_HTOeHw/lpc_chip_43xx/src/adc_18xx_43xx.c  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/src/adc_18xx_43xx.c 2015-08-08 23:28:12.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/src/adc_18xx_43xx.c ./lpc_chip_43xx/src/adc_18xx_43xx.c
+--- a_8FkA5l/lpc_chip_43xx/src/adc_18xx_43xx.c	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/src/adc_18xx_43xx.c	2017-02-27 20:42:08.472009492 -0300
 @@ -0,0 +1,257 @@
 +/*
 + * @brief LPC18xx/43xx A/D conversion driver
@@ -27401,9 +27405,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +   return rt;
 +}
 +
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/src/aes_18xx_43xx.c ./lpc_chip_43xx/src/aes_18xx_43xx.c
---- a_HTOeHw/lpc_chip_43xx/src/aes_18xx_43xx.c  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/src/aes_18xx_43xx.c 2015-08-08 23:28:12.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/src/aes_18xx_43xx.c ./lpc_chip_43xx/src/aes_18xx_43xx.c
+--- a_8FkA5l/lpc_chip_43xx/src/aes_18xx_43xx.c	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/src/aes_18xx_43xx.c	2017-02-27 20:42:08.472009492 -0300
 @@ -0,0 +1,174 @@
 +/*
 + * @brief LPC18xx/43xx AES Engine driver
@@ -27579,9 +27583,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +{
 +   return aes_Get_Status_DMA(channel_id);
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/src/atimer_18xx_43xx.c ./lpc_chip_43xx/src/atimer_18xx_43xx.c
---- a_HTOeHw/lpc_chip_43xx/src/atimer_18xx_43xx.c   1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/src/atimer_18xx_43xx.c  2015-08-08 23:28:10.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/src/atimer_18xx_43xx.c ./lpc_chip_43xx/src/atimer_18xx_43xx.c
+--- a_8FkA5l/lpc_chip_43xx/src/atimer_18xx_43xx.c	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/src/atimer_18xx_43xx.c	2017-02-27 20:42:08.472009492 -0300
 @@ -0,0 +1,63 @@
 +/*
 + * @brief LPC18xx/43xx Alarm Timer driver
@@ -27646,9 +27650,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +   Chip_ATIMER_IntDisable(pATIMER);
 +}
 +
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/src/ccan_18xx_43xx.c ./lpc_chip_43xx/src/ccan_18xx_43xx.c
---- a_HTOeHw/lpc_chip_43xx/src/ccan_18xx_43xx.c 1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/src/ccan_18xx_43xx.c    2015-08-08 23:28:12.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/src/ccan_18xx_43xx.c ./lpc_chip_43xx/src/ccan_18xx_43xx.c
+--- a_8FkA5l/lpc_chip_43xx/src/ccan_18xx_43xx.c	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/src/ccan_18xx_43xx.c	2017-02-27 20:42:08.472009492 -0300
 @@ -0,0 +1,311 @@
 +/*
 + * @brief LPC18xx/43xx CCAN driver
@@ -27961,9 +27965,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +   }
 +}
 +
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/src/chip_18xx_43xx.c ./lpc_chip_43xx/src/chip_18xx_43xx.c
---- a_HTOeHw/lpc_chip_43xx/src/chip_18xx_43xx.c 1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/src/chip_18xx_43xx.c    2015-08-08 23:28:12.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/src/chip_18xx_43xx.c ./lpc_chip_43xx/src/chip_18xx_43xx.c
+--- a_8FkA5l/lpc_chip_43xx/src/chip_18xx_43xx.c	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/src/chip_18xx_43xx.c	2017-02-27 20:42:08.472009492 -0300
 @@ -0,0 +1,117 @@
 +/*
 + * @brief LPC18xx/LPC43xx chip driver source
@@ -28082,9 +28086,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +   /* CPU core speed */
 +   SystemCoreClock = Chip_Clock_GetRate(CLK_MX_MXCORE);
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/src/clock_18xx_43xx.c ./lpc_chip_43xx/src/clock_18xx_43xx.c
---- a_HTOeHw/lpc_chip_43xx/src/clock_18xx_43xx.c    1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/src/clock_18xx_43xx.c   2015-08-08 23:28:10.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/src/clock_18xx_43xx.c ./lpc_chip_43xx/src/clock_18xx_43xx.c
+--- a_8FkA5l/lpc_chip_43xx/src/clock_18xx_43xx.c	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/src/clock_18xx_43xx.c	2017-02-27 20:42:08.476009492 -0300
 @@ -0,0 +1,823 @@
 +/*
 + * @brief LPC18xx/43xx clock driver
@@ -28909,9 +28913,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +{
 +   return LPC_CGU->PLL[pllnum].PLL_STAT;
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/src/dac_18xx_43xx.c ./lpc_chip_43xx/src/dac_18xx_43xx.c
---- a_HTOeHw/lpc_chip_43xx/src/dac_18xx_43xx.c  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/src/dac_18xx_43xx.c 2015-08-08 23:28:10.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/src/dac_18xx_43xx.c ./lpc_chip_43xx/src/dac_18xx_43xx.c
+--- a_8FkA5l/lpc_chip_43xx/src/dac_18xx_43xx.c	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/src/dac_18xx_43xx.c	2017-02-27 20:42:08.476009492 -0300
 @@ -0,0 +1,85 @@
 +/*
 + * @brief LPC18xx/43xx D/A conversion driver
@@ -28998,9 +29002,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +   }
 +}
 +
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/src/eeprom_18xx_43xx.c ./lpc_chip_43xx/src/eeprom_18xx_43xx.c
---- a_HTOeHw/lpc_chip_43xx/src/eeprom_18xx_43xx.c   1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/src/eeprom_18xx_43xx.c  2015-08-08 23:28:12.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/src/eeprom_18xx_43xx.c ./lpc_chip_43xx/src/eeprom_18xx_43xx.c
+--- a_8FkA5l/lpc_chip_43xx/src/eeprom_18xx_43xx.c	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/src/eeprom_18xx_43xx.c	2017-02-27 20:42:08.476009492 -0300
 @@ -0,0 +1,100 @@
 +/*
 + * @brief LPC18xx/43xx EEPROM driver
@@ -29102,9 +29106,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +   Chip_EEPROM_ClearIntStatus(pEEPROM, mask);
 +}
 +
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/src/emc_18xx_43xx.c ./lpc_chip_43xx/src/emc_18xx_43xx.c
---- a_HTOeHw/lpc_chip_43xx/src/emc_18xx_43xx.c  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/src/emc_18xx_43xx.c 2015-08-08 23:28:12.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/src/emc_18xx_43xx.c ./lpc_chip_43xx/src/emc_18xx_43xx.c
+--- a_8FkA5l/lpc_chip_43xx/src/emc_18xx_43xx.c	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/src/emc_18xx_43xx.c	2017-02-27 20:42:08.476009492 -0300
 @@ -0,0 +1,289 @@
 +/*
 + * @brief LPC18xx/43xx EMC driver
@@ -29395,9 +29399,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +   LPC_EMC->CONTROL     = (Enable ? 1 : 0);
 +}
 +
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/src/enet_18xx_43xx.c ./lpc_chip_43xx/src/enet_18xx_43xx.c
---- a_HTOeHw/lpc_chip_43xx/src/enet_18xx_43xx.c 1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/src/enet_18xx_43xx.c    2015-08-08 23:28:12.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/src/enet_18xx_43xx.c ./lpc_chip_43xx/src/enet_18xx_43xx.c
+--- a_8FkA5l/lpc_chip_43xx/src/enet_18xx_43xx.c	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/src/enet_18xx_43xx.c	2017-02-27 20:42:08.476009492 -0300
 @@ -0,0 +1,182 @@
 +/*
 + * @brief LPC18xx/43xx Ethernet driver
@@ -29581,9 +29585,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +   }
 +}
 +
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/src/evrt_18xx_43xx.c ./lpc_chip_43xx/src/evrt_18xx_43xx.c
---- a_HTOeHw/lpc_chip_43xx/src/evrt_18xx_43xx.c 1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/src/evrt_18xx_43xx.c    2015-08-08 23:28:12.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/src/evrt_18xx_43xx.c ./lpc_chip_43xx/src/evrt_18xx_43xx.c
+--- a_8FkA5l/lpc_chip_43xx/src/evrt_18xx_43xx.c	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/src/evrt_18xx_43xx.c	2017-02-27 20:42:08.476009492 -0300
 @@ -0,0 +1,111 @@
 +/*
 + * @brief LPC18xx/43xx event router driver
@@ -29696,9 +29700,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +   }
 +   else {return RESET; }
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/src/fpu_init.c ./lpc_chip_43xx/src/fpu_init.c
---- a_HTOeHw/lpc_chip_43xx/src/fpu_init.c   1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/src/fpu_init.c  2015-08-08 23:28:12.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/src/fpu_init.c ./lpc_chip_43xx/src/fpu_init.c
+--- a_8FkA5l/lpc_chip_43xx/src/fpu_init.c	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/src/fpu_init.c	2017-02-27 20:42:08.476009492 -0300
 @@ -0,0 +1,97 @@
 +/*
 + * @brief FPU init code
@@ -29797,9 +29801,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +}
 +
 +#endif /* defined(CORE_M4 */
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/src/gpdma_18xx_43xx.c ./lpc_chip_43xx/src/gpdma_18xx_43xx.c
---- a_HTOeHw/lpc_chip_43xx/src/gpdma_18xx_43xx.c    1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/src/gpdma_18xx_43xx.c   2015-08-08 23:28:12.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/src/gpdma_18xx_43xx.c ./lpc_chip_43xx/src/gpdma_18xx_43xx.c
+--- a_8FkA5l/lpc_chip_43xx/src/gpdma_18xx_43xx.c	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/src/gpdma_18xx_43xx.c	2017-02-27 20:42:08.476009492 -0300
 @@ -0,0 +1,746 @@
 +/*
 + * @brief LPC18xx/43xx GPDMA driver
@@ -30547,9 +30551,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +   return 0;
 +}
 +
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/src/gpio_18xx_43xx.c ./lpc_chip_43xx/src/gpio_18xx_43xx.c
---- a_HTOeHw/lpc_chip_43xx/src/gpio_18xx_43xx.c 1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/src/gpio_18xx_43xx.c    2015-08-08 23:28:10.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/src/gpio_18xx_43xx.c ./lpc_chip_43xx/src/gpio_18xx_43xx.c
+--- a_8FkA5l/lpc_chip_43xx/src/gpio_18xx_43xx.c	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/src/gpio_18xx_43xx.c	2017-02-27 20:42:08.476009492 -0300
 @@ -0,0 +1,102 @@
 +/*
 + * @brief LPC18xx/43xx GPIO driver
@@ -30653,9 +30657,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +       Chip_GPIO_SetPortDIRInput(pGPIO, port, pinMask);
 +   }
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/src/gpiogroup_18xx_43xx.c ./lpc_chip_43xx/src/gpiogroup_18xx_43xx.c
---- a_HTOeHw/lpc_chip_43xx/src/gpiogroup_18xx_43xx.c    1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/src/gpiogroup_18xx_43xx.c   2015-08-08 23:28:12.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/src/gpiogroup_18xx_43xx.c ./lpc_chip_43xx/src/gpiogroup_18xx_43xx.c
+--- a_8FkA5l/lpc_chip_43xx/src/gpiogroup_18xx_43xx.c	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/src/gpiogroup_18xx_43xx.c	2017-02-27 20:42:08.476009492 -0300
 @@ -0,0 +1,48 @@
 +/*
 + * @brief LPC18xx/43xx GPIO group driver
@@ -30705,9 +30709,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +/*****************************************************************************
 + * Public functions
 + ****************************************************************************/
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/src/hsadc_18xx_43xx.c ./lpc_chip_43xx/src/hsadc_18xx_43xx.c
---- a_HTOeHw/lpc_chip_43xx/src/hsadc_18xx_43xx.c    1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/src/hsadc_18xx_43xx.c   2015-08-08 23:28:12.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/src/hsadc_18xx_43xx.c ./lpc_chip_43xx/src/hsadc_18xx_43xx.c
+--- a_8FkA5l/lpc_chip_43xx/src/hsadc_18xx_43xx.c	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/src/hsadc_18xx_43xx.c	2017-02-27 20:42:08.476009492 -0300
 @@ -0,0 +1,178 @@
 +/*
 + * @brief LPC18xx/43xx High speed ADC driver
@@ -30887,9 +30891,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +   reg = pHSADC->POWER_CONTROL & ~mask;
 +   pHSADC->POWER_CONTROL = reg | orBits;
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/src/i2c_18xx_43xx.c ./lpc_chip_43xx/src/i2c_18xx_43xx.c
---- a_HTOeHw/lpc_chip_43xx/src/i2c_18xx_43xx.c  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/src/i2c_18xx_43xx.c 2015-08-08 23:28:12.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/src/i2c_18xx_43xx.c ./lpc_chip_43xx/src/i2c_18xx_43xx.c
+--- a_8FkA5l/lpc_chip_43xx/src/i2c_18xx_43xx.c	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/src/i2c_18xx_43xx.c	2017-02-27 20:42:08.480009492 -0300
 @@ -0,0 +1,554 @@
 +/*
 + * @brief LPC18xx/43xx I2C driver
@@ -31445,9 +31449,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +   return (LPC_I2Cx(id)->CONSET & I2C_CON_SI) != 0;
 +}
 +
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/src/i2cm_18xx_43xx.c ./lpc_chip_43xx/src/i2cm_18xx_43xx.c
---- a_HTOeHw/lpc_chip_43xx/src/i2cm_18xx_43xx.c 1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/src/i2cm_18xx_43xx.c    2015-08-08 23:28:12.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/src/i2cm_18xx_43xx.c ./lpc_chip_43xx/src/i2cm_18xx_43xx.c
+--- a_8FkA5l/lpc_chip_43xx/src/i2cm_18xx_43xx.c	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/src/i2cm_18xx_43xx.c	2017-02-27 20:42:08.480009492 -0300
 @@ -0,0 +1,265 @@
 +/*
 + * @brief LPC18xx/43xx I2C master driver
@@ -31714,9 +31718,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +
 +   return rxLen;
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/src/i2s_18xx_43xx.c ./lpc_chip_43xx/src/i2s_18xx_43xx.c
---- a_HTOeHw/lpc_chip_43xx/src/i2s_18xx_43xx.c  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/src/i2s_18xx_43xx.c 2015-08-08 23:28:10.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/src/i2s_18xx_43xx.c ./lpc_chip_43xx/src/i2s_18xx_43xx.c
+--- a_8FkA5l/lpc_chip_43xx/src/i2s_18xx_43xx.c	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/src/i2s_18xx_43xx.c	2017-02-27 20:42:08.480009492 -0300
 @@ -0,0 +1,258 @@
 +/*
 + * @brief LPC18xx/43xx I2S driver
@@ -31976,9 +31980,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +   }
 +}
 +
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/src/iap_18xx_43xx.c ./lpc_chip_43xx/src/iap_18xx_43xx.c
---- a_HTOeHw/lpc_chip_43xx/src/iap_18xx_43xx.c  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/src/iap_18xx_43xx.c 2015-08-09 15:45:54.770325927 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/src/iap_18xx_43xx.c ./lpc_chip_43xx/src/iap_18xx_43xx.c
+--- a_8FkA5l/lpc_chip_43xx/src/iap_18xx_43xx.c	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/src/iap_18xx_43xx.c	2017-02-27 20:42:08.480009492 -0300
 @@ -0,0 +1,191 @@
 +/*
 + * @brief Common FLASH IAP support functions
@@ -32171,9 +32175,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +
 +   return result[0];
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/src/lcd_18xx_43xx.c ./lpc_chip_43xx/src/lcd_18xx_43xx.c
---- a_HTOeHw/lpc_chip_43xx/src/lcd_18xx_43xx.c  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/src/lcd_18xx_43xx.c 2015-08-08 23:28:12.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/src/lcd_18xx_43xx.c ./lpc_chip_43xx/src/lcd_18xx_43xx.c
+--- a_8FkA5l/lpc_chip_43xx/src/lcd_18xx_43xx.c	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/src/lcd_18xx_43xx.c	2017-02-27 20:42:08.480009492 -0300
 @@ -0,0 +1,206 @@
 +/*
 + * @brief LPC18xx/43xx LCD chip driver
@@ -32381,9 +32385,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +   }
 +}
 +
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/src/otp_18xx_43xx.c ./lpc_chip_43xx/src/otp_18xx_43xx.c
---- a_HTOeHw/lpc_chip_43xx/src/otp_18xx_43xx.c  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/src/otp_18xx_43xx.c 2015-08-08 23:28:12.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/src/otp_18xx_43xx.c ./lpc_chip_43xx/src/otp_18xx_43xx.c
+--- a_8FkA5l/lpc_chip_43xx/src/otp_18xx_43xx.c	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/src/otp_18xx_43xx.c	2017-02-27 20:42:08.480009492 -0300
 @@ -0,0 +1,145 @@
 +/*
 + * @brief LPC18xx/43xx OTP Controller driver
@@ -32530,9 +32534,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +{
 +   return Otp_GenRand();
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/src/pinint_18xx_43xx.c ./lpc_chip_43xx/src/pinint_18xx_43xx.c
---- a_HTOeHw/lpc_chip_43xx/src/pinint_18xx_43xx.c   1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/src/pinint_18xx_43xx.c  2015-08-08 23:28:12.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/src/pinint_18xx_43xx.c ./lpc_chip_43xx/src/pinint_18xx_43xx.c
+--- a_8FkA5l/lpc_chip_43xx/src/pinint_18xx_43xx.c	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/src/pinint_18xx_43xx.c	2017-02-27 20:42:08.480009492 -0300
 @@ -0,0 +1,48 @@
 +/*
 + * @brief LPC18xx/43xx Pin Interrupt and Pattern Match driver
@@ -32582,9 +32586,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +/*****************************************************************************
 + * Public functions
 + ****************************************************************************/
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/src/pmc_18xx_43xx.c ./lpc_chip_43xx/src/pmc_18xx_43xx.c
---- a_HTOeHw/lpc_chip_43xx/src/pmc_18xx_43xx.c  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/src/pmc_18xx_43xx.c 2015-08-08 23:28:12.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/src/pmc_18xx_43xx.c ./lpc_chip_43xx/src/pmc_18xx_43xx.c
+--- a_8FkA5l/lpc_chip_43xx/src/pmc_18xx_43xx.c	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/src/pmc_18xx_43xx.c	2017-02-27 20:42:08.480009492 -0300
 @@ -0,0 +1,69 @@
 +/*
 + * @brief LPC18xx/43xx Power Management Controller driver
@@ -32655,9 +32659,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +   __WFI();
 +}
 +
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/src/ring_buffer.c ./lpc_chip_43xx/src/ring_buffer.c
---- a_HTOeHw/lpc_chip_43xx/src/ring_buffer.c    1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/src/ring_buffer.c   2015-08-08 23:28:12.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/src/ring_buffer.c ./lpc_chip_43xx/src/ring_buffer.c
+--- a_8FkA5l/lpc_chip_43xx/src/ring_buffer.c	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/src/ring_buffer.c	2017-02-27 20:42:08.480009492 -0300
 @@ -0,0 +1,167 @@
 +/*
 + * @brief Common ring buffer support functions
@@ -32826,9 +32830,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +
 +   return cnt1 + cnt2;
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/src/ritimer_18xx_43xx.c ./lpc_chip_43xx/src/ritimer_18xx_43xx.c
---- a_HTOeHw/lpc_chip_43xx/src/ritimer_18xx_43xx.c  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/src/ritimer_18xx_43xx.c 2015-08-08 23:28:10.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/src/ritimer_18xx_43xx.c ./lpc_chip_43xx/src/ritimer_18xx_43xx.c
+--- a_8FkA5l/lpc_chip_43xx/src/ritimer_18xx_43xx.c	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/src/ritimer_18xx_43xx.c	2017-02-27 20:42:08.480009492 -0300
 @@ -0,0 +1,97 @@
 +/*
 + * @brief LPC18xx/43xx RITimer chip driver
@@ -32927,9 +32931,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +   return (IntStatus) result;
 +}
 +
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/src/rtc_18xx_43xx.c ./lpc_chip_43xx/src/rtc_18xx_43xx.c
---- a_HTOeHw/lpc_chip_43xx/src/rtc_18xx_43xx.c  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/src/rtc_18xx_43xx.c 2015-08-08 23:28:12.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/src/rtc_18xx_43xx.c ./lpc_chip_43xx/src/rtc_18xx_43xx.c
+--- a_8FkA5l/lpc_chip_43xx/src/rtc_18xx_43xx.c	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/src/rtc_18xx_43xx.c	2017-02-27 20:42:08.480009492 -0300
 @@ -0,0 +1,220 @@
 +/*
 + * @brief LPC18xx/43xx RTC driver
@@ -33151,9 +33155,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +
 +#endif /*RTC_EV_SUPPORT*/
 +
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/src/sct_18xx_43xx.c ./lpc_chip_43xx/src/sct_18xx_43xx.c
---- a_HTOeHw/lpc_chip_43xx/src/sct_18xx_43xx.c  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/src/sct_18xx_43xx.c 2015-08-08 23:28:12.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/src/sct_18xx_43xx.c ./lpc_chip_43xx/src/sct_18xx_43xx.c
+--- a_8FkA5l/lpc_chip_43xx/src/sct_18xx_43xx.c	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/src/sct_18xx_43xx.c	2017-02-27 20:42:08.480009492 -0300
 @@ -0,0 +1,87 @@
 +/*
 + * @brief LPC18xx/43xx State Configurable Timer driver
@@ -33242,9 +33246,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +   pSCT->RES = tem;
 +}
 +
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/src/sct_pwm_18xx_43xx.c ./lpc_chip_43xx/src/sct_pwm_18xx_43xx.c
---- a_HTOeHw/lpc_chip_43xx/src/sct_pwm_18xx_43xx.c  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/src/sct_pwm_18xx_43xx.c 2015-08-08 23:28:10.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/src/sct_pwm_18xx_43xx.c ./lpc_chip_43xx/src/sct_pwm_18xx_43xx.c
+--- a_8FkA5l/lpc_chip_43xx/src/sct_pwm_18xx_43xx.c	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/src/sct_pwm_18xx_43xx.c	2017-02-27 20:42:08.484009492 -0300
 @@ -0,0 +1,87 @@
 +/*
 + * @brief LPC18xx_43xx State Configurable Timer PWM driver
@@ -33333,9 +33337,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +   /* Set SCT Counter to count 32-bits and reset to 0 after reaching MATCH0 */
 +   Chip_SCT_Config(pSCT, SCT_CONFIG_32BIT_COUNTER | SCT_CONFIG_AUTOLIMIT_L);
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/src/sdif_18xx_43xx.c ./lpc_chip_43xx/src/sdif_18xx_43xx.c
---- a_HTOeHw/lpc_chip_43xx/src/sdif_18xx_43xx.c 1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/src/sdif_18xx_43xx.c    2015-08-08 23:28:10.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/src/sdif_18xx_43xx.c ./lpc_chip_43xx/src/sdif_18xx_43xx.c
+--- a_8FkA5l/lpc_chip_43xx/src/sdif_18xx_43xx.c	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/src/sdif_18xx_43xx.c	2017-02-27 20:42:08.484009492 -0300
 @@ -0,0 +1,223 @@
 +/*
 + * @brief LPC18xx/43xx SD/SDIO driver
@@ -33560,9 +33564,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +   pSDMMC->DBADDR = (uint32_t) &psdif_dev->mci_dma_dd[0];
 +}
 +
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/src/sdio_18xx_43xx.c ./lpc_chip_43xx/src/sdio_18xx_43xx.c
---- a_HTOeHw/lpc_chip_43xx/src/sdio_18xx_43xx.c 1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/src/sdio_18xx_43xx.c    2015-08-08 23:28:12.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/src/sdio_18xx_43xx.c ./lpc_chip_43xx/src/sdio_18xx_43xx.c
+--- a_8FkA5l/lpc_chip_43xx/src/sdio_18xx_43xx.c	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/src/sdio_18xx_43xx.c	2017-02-27 20:42:08.484009492 -0300
 @@ -0,0 +1,518 @@
 +/*
 + * @brief LPC18xx/43xx SDIO Card driver
@@ -34082,9 +34086,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +   /* Clear the interrupts */
 +   pSDMMC->RINTSTS = iclr;
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/src/sdmmc_18xx_43xx.c ./lpc_chip_43xx/src/sdmmc_18xx_43xx.c
---- a_HTOeHw/lpc_chip_43xx/src/sdmmc_18xx_43xx.c    1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/src/sdmmc_18xx_43xx.c   2015-08-08 23:28:10.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/src/sdmmc_18xx_43xx.c ./lpc_chip_43xx/src/sdmmc_18xx_43xx.c
+--- a_8FkA5l/lpc_chip_43xx/src/sdmmc_18xx_43xx.c	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/src/sdmmc_18xx_43xx.c	2017-02-27 20:42:08.484009492 -0300
 @@ -0,0 +1,592 @@
 +/*
 + * @brief LPC18xx/43xx SD/SDIO driver
@@ -34678,9 +34682,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +
 +   return cbWrote;
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/src/spi_18xx_43xx.c ./lpc_chip_43xx/src/spi_18xx_43xx.c
---- a_HTOeHw/lpc_chip_43xx/src/spi_18xx_43xx.c  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/src/spi_18xx_43xx.c 2015-08-08 23:28:10.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/src/spi_18xx_43xx.c ./lpc_chip_43xx/src/spi_18xx_43xx.c
+--- a_8FkA5l/lpc_chip_43xx/src/spi_18xx_43xx.c	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/src/spi_18xx_43xx.c	2017-02-27 20:42:08.484009492 -0300
 @@ -0,0 +1,227 @@
 +/*
 + * @brief LPC43xx SPI driver
@@ -34909,9 +34913,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +}
 +
 +#endif
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/src/ssp_18xx_43xx.c ./lpc_chip_43xx/src/ssp_18xx_43xx.c
---- a_HTOeHw/lpc_chip_43xx/src/ssp_18xx_43xx.c  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/src/ssp_18xx_43xx.c 2015-08-08 23:28:12.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/src/ssp_18xx_43xx.c ./lpc_chip_43xx/src/ssp_18xx_43xx.c
+--- a_8FkA5l/lpc_chip_43xx/src/ssp_18xx_43xx.c	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/src/ssp_18xx_43xx.c	2017-02-27 20:42:08.484009492 -0300
 @@ -0,0 +1,469 @@
 +/*
 + * @brief LPC18xx/43xx SSP driver
@@ -35382,9 +35386,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +
 +}
 +
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/src/stopwatch_18xx_43xx.c ./lpc_chip_43xx/src/stopwatch_18xx_43xx.c
---- a_HTOeHw/lpc_chip_43xx/src/stopwatch_18xx_43xx.c    1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/src/stopwatch_18xx_43xx.c   2015-08-08 23:28:10.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/src/stopwatch_18xx_43xx.c ./lpc_chip_43xx/src/stopwatch_18xx_43xx.c
+--- a_8FkA5l/lpc_chip_43xx/src/stopwatch_18xx_43xx.c	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/src/stopwatch_18xx_43xx.c	2017-02-27 20:42:08.484009492 -0300
 @@ -0,0 +1,106 @@
 +/*
 + * @brief LPC18xx/43xx specific stopwatch implementation
@@ -35492,9 +35496,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +{
 +   return uS * ticksPerUs;
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/src/sysinit_18xx_43xx.c ./lpc_chip_43xx/src/sysinit_18xx_43xx.c
---- a_HTOeHw/lpc_chip_43xx/src/sysinit_18xx_43xx.c  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/src/sysinit_18xx_43xx.c 2015-08-22 01:37:13.884018746 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/src/sysinit_18xx_43xx.c ./lpc_chip_43xx/src/sysinit_18xx_43xx.c
+--- a_8FkA5l/lpc_chip_43xx/src/sysinit_18xx_43xx.c	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/src/sysinit_18xx_43xx.c	2017-02-27 20:42:08.484009492 -0300
 @@ -0,0 +1,162 @@
 +/*
 + * @brief LPC18xx/LPC43xx Chip specific SystemInit
@@ -35658,9 +35662,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +   /* Initial internal clocking */
 +   Chip_SetupIrcClocking();
 +}
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/src/timer_18xx_43xx.c ./lpc_chip_43xx/src/timer_18xx_43xx.c
---- a_HTOeHw/lpc_chip_43xx/src/timer_18xx_43xx.c    1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/src/timer_18xx_43xx.c   2015-08-08 23:28:12.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/src/timer_18xx_43xx.c ./lpc_chip_43xx/src/timer_18xx_43xx.c
+--- a_8FkA5l/lpc_chip_43xx/src/timer_18xx_43xx.c	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/src/timer_18xx_43xx.c	2017-02-27 20:42:08.484009492 -0300
 @@ -0,0 +1,117 @@
 +/*
 + * @brief LPC18xx/43xx 16/32-bit Timer/PWM driver
@@ -35779,9 +35783,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +               (((uint32_t) matchState) << (4 + (matchnum * 2)));
 +}
 +
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/src/uart_18xx_43xx.c ./lpc_chip_43xx/src/uart_18xx_43xx.c
---- a_HTOeHw/lpc_chip_43xx/src/uart_18xx_43xx.c 1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/src/uart_18xx_43xx.c    2015-08-08 23:28:12.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/src/uart_18xx_43xx.c ./lpc_chip_43xx/src/uart_18xx_43xx.c
+--- a_8FkA5l/lpc_chip_43xx/src/uart_18xx_43xx.c	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/src/uart_18xx_43xx.c	2017-02-27 20:42:08.488009493 -0300
 @@ -0,0 +1,424 @@
 +/*
 + * @brief LPC18xx/43xx UART chip driver
@@ -36207,9 +36211,9 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +   }
 +}
 +
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/src/wwdt_18xx_43xx.c ./lpc_chip_43xx/src/wwdt_18xx_43xx.c
---- a_HTOeHw/lpc_chip_43xx/src/wwdt_18xx_43xx.c 1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/src/wwdt_18xx_43xx.c    2015-08-08 23:28:10.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/src/wwdt_18xx_43xx.c ./lpc_chip_43xx/src/wwdt_18xx_43xx.c
+--- a_8FkA5l/lpc_chip_43xx/src/wwdt_18xx_43xx.c	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/src/wwdt_18xx_43xx.c	2017-02-27 20:42:08.488009493 -0300
 @@ -0,0 +1,78 @@
 +/*
 + * @brief LPC18xx/43xx WWDT driver
@@ -36289,17 +36293,17 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +   }
 +}
 +
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/lpc_chip_43xx/version.txt ./lpc_chip_43xx/version.txt
---- a_HTOeHw/lpc_chip_43xx/version.txt  1969-12-31 21:00:00.000000000 -0300
-+++ ./lpc_chip_43xx/version.txt 2015-08-08 23:28:12.000000000 -0300
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/lpc_chip_43xx/version.txt ./lpc_chip_43xx/version.txt
+--- a_8FkA5l/lpc_chip_43xx/version.txt	1969-12-31 21:00:00.000000000 -0300
++++ ./lpc_chip_43xx/version.txt	2017-02-27 20:42:08.488009493 -0300
 @@ -0,0 +1,3 @@
 +LPCOPEN VERSION: 2_16
 +RELEASE DATE:
 +Fri 02/20/2015
-diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_HTOeHw/Makefile ./Makefile
---- a_HTOeHw/Makefile   1969-12-31 21:00:00.000000000 -0300
-+++ ./Makefile  2016-10-08 23:32:39.367829731 -0300
-@@ -0,0 +1,73 @@
+diff -u -r --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '*.lst' -x '*.map' -x '.config*' -x '*.conf' -x autoconf.h a_8FkA5l/Makefile ./Makefile
+--- a_8FkA5l/Makefile	1969-12-31 21:00:00.000000000 -0300
++++ ./Makefile	2017-02-27 20:57:18.556033863 -0300
+@@ -0,0 +1,85 @@
 +include config.mk
 +
 +SRC=$(foreach m, $(MODULES), $(wildcard $(m)/src/*.c))
@@ -36310,66 +36314,78 @@ diff -aur --unidirectional-new-file -x '.git*' -x '*.o' -x '*.d' -x '*.elf' -x '
 +LDSCRIPT=ciaa_lpc4337.ld
 +
 +ARCH_FLAGS=-mcpu=cortex-m4 -mthumb
-+ARCH_FLAGS+=-mfloat-abi=hard -mfpu=fpv4-sp-d16
 +
-+CFLAGS=$(ARCH_FLAGS) $(INCLUDES) $(_DEFINES) -ggdb3 -Og -ffunction-sections -fdata-sections
-+LDFLAGS=$(ARCH_FLAGS) -T$(LDSCRIPT) -nostartfiles -Wl,-gc-sections
++TARGET=$(APP).elf
++TARGET_BIN=$(basename $(TARGET)).bin
++TARGET_LST=$(basename $(TARGET)).lst
++TARGET_MAP=$(basename $(TARGET)).map
++
++ifeq ($(USE_FPU),y)
++ARCH_FLAGS+=-mfloat-abi=hard -mfpu=fpv4-sp-d16
++endif
++
++CFLAGS=$(ARCH_FLAGS) $(INCLUDES) $(_DEFINES) -ggdb3 -O$(OPT) -ffunction-sections -fdata-sections
++LDFLAGS=$(ARCH_FLAGS) -T$(LDSCRIPT) -nostartfiles -Wl,-gc-sections -Wl,-Map=$(TARGET_MAP) -Wl,--cref
++
++ifeq ($(USE_NANO),y)
 +LDFLAGS+=--specs=nano.specs
-+#LDFLAGS+=--specs=rdimon.specs
++endif
++
++ifeq ($(SEMIHOST),y)
++LDFLAGS+=--specs=rdimon.specs
++endif
 +
 +CROSS=arm-none-eabi-
 +CC=$(CROSS)gcc
 +LD=$(CROSS)gcc
 +SIZE=$(CROSS)size
-+LIST=$(CROSS)objdump -xCedlSwz
++LIST=$(CROSS)objdump -xdS
 +OBJCOPY=$(CROSS)objcopy
 +GDB=$(CROSS)gdb
 +OOCD=openocd
++
 +OOCD_SCRIPT?=ciaa-nxp.cfg
++
 +ifeq ($(VERBOSE),y)
 +Q=
 +else
 +Q=@
 +endif
 +
-+TARGET=$(APP).elf
-+TARGET_BIN=$(basename $(TARGET)).bin
-+TARGET_LST=$(basename $(TARGET)).lst
-+
-+all: $(TARGET) $(TARGET_BIN) $(TARGET_LST)
++all: $(TARGET) $(TARGET_BIN) $(TARGET_LST) size
 +
 +-include $(DEPS)
 +
 +%.o: %.c
-+   @echo CC $<
-+   $(Q)$(CC) -MMD $(CFLAGS) -c -o $@ $<
++	@echo CC $<
++	$(Q)$(CC) -MMD $(CFLAGS) -c -o $@ $<
 +
 +$(TARGET): $(OBJECTS)
-+   @echo LD $@
-+   $(Q)$(LD) $(LDFLAGS) -o $@ $(OBJECTS)
++	@echo LD $@
++	$(Q)$(LD) $(LDFLAGS) -o $@ $(OBJECTS)
 +
 +$(TARGET_BIN): $(TARGET)
-+   @echo BIN
-+   $(Q)$(OBJCOPY) -v -O binary $< $@
++	@echo BIN
++	$(Q)$(OBJCOPY) -v -O binary $< $@
 +
 +$(TARGET_LST): $(TARGET)
-+   @echo LIST
-+   $(Q)$(LIST) $< > $@
++	@echo LIST
++	$(Q)$(LIST) $< > $@
 +
 +size: $(TARGET)
-+   $(Q)$(SIZE) $<
++	$(Q)$(SIZE) $<
 +
 +program: $(TARGET_BIN)
-+   @echo PROG
-+   $(Q)$(OOCD) -f $(OOCD_SCRIPT) \
-+       -c "init" \
-+       -c "halt 0" \
-+       -c "flash write_image erase unlock $< 0x1A000000 bin" \
-+       -c "reset run" \
-+       -c "shutdown" 2>&1
++	@echo PROG
++	$(Q)$(OOCD) -f $(OOCD_SCRIPT) \
++		-c "init" \
++		-c "halt 0" \
++		-c "flash write_image erase unlock $< 0x1A000000 bin" \
++		-c "reset run" \
++		-c "shutdown" 2>&1
 +
 +clean:
-+   @echo CLEAN
-+   $(Q)rm -fR $(OBJECTS) $(TARGET) $(TARGET_BIN) $(TARGET_LST) $(DEPS)
++	@echo CLEAN
++	$(Q)rm -fR $(OBJECTS) $(TARGET) $(TARGET_BIN) $(TARGET_LST) $(DEPS)
 +
 +.PHONY: all size clean program
